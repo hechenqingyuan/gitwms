@@ -155,10 +155,6 @@
       <Project>{7061be81-6a7b-4773-8bef-fad51a88d522}</Project>
       <Name>Git.Storage.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Git.Storage.Conversion\Git.Storage.Conversion.csproj">
-      <Project>{eab2069e-c9ea-4439-b727-ba838a4a75ac}</Project>
-      <Name>Git.Storage.Conversion</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Git.Storage.DataAccess\Git.Storage.DataAccess.csproj">
       <Project>{3a7282e9-8371-4255-a7e6-600a111f03d1}</Project>
       <Name>Git.Storage.DataAccess</Name>
