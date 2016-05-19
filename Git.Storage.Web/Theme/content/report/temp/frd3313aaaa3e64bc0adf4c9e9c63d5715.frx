@@ -1,0 +1,32 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/08/2015 19:28:01" ReportInfo.Modified="09/08/2015 19:28:01" ReportInfo.CreatorVersion="2015.3.7.0">
+  <Dictionary>
+    <TableDataSource Name="Table" ReferenceName="Data.Table" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="Sn" DataType="System.String"/>
+      <Column Name="StorageNum" DataType="System.String"/>
+      <Column Name="StorageName" DataType="System.String"/>
+      <Column Name="LocalNum" DataType="System.String"/>
+      <Column Name="LocalName" DataType="System.String"/>
+      <Column Name="LocalType" DataType="System.Int32"/>
+      <Column Name="ProductNum" DataType="System.String"/>
+      <Column Name="BarCode" DataType="System.String"/>
+      <Column Name="ProductName" DataType="System.String"/>
+      <Column Name="BatchNum" DataType="System.String"/>
+      <Column Name="Num" DataType="System.Double"/>
+      <Column Name="CreateTime" DataType="System.DateTime"/>
+      <Column Name="CreateUser" DataType="System.String"/>
+      <Column Name="CreateName" DataType="System.String"/>
+      <Column Name="Remark" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <DataBand Name="Data1" Width="718.2" Height="18.9" DataSource="Table">
+      <TextObject Name="Text2" Left="9.45" Width="94.5" Height="18.9" Text="[Table.StorageName]"/>
+      <TextObject Name="Text3" Left="132.3" Width="94.5" Height="18.9" Text="[Table.LocalName]"/>
+      <TextObject Name="Text4" Left="255.14" Width="94.5" Height="18.9" Text="[Table.ProductName]"/>
+      <TextObject Name="Text5" Left="377.99" Width="94.5" Height="18.9" Text="[Table.BatchNum]"/>
+      <TextObject Name="Text6" Left="510.29" Width="94.5" Height="18.9" Text="[Table.Num]"/>
+    </DataBand>
+  </ReportPage>
+</Report>

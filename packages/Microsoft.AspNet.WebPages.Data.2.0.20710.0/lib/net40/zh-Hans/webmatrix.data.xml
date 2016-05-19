@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>WebMatrix.Data</name>
+  </assembly>
+  <members>
+    <member name="T:WebMatrix.Data.ConnectionEventArgs">
+      <summary>为 <see cref="T:WebMatrix.Data.Database" /> 类的 <see cref="E:WebMatrix.Data.Database.ConnectionOpened" /> 事件提供数据。</summary>
+    </member>
+    <member name="M:WebMatrix.Data.ConnectionEventArgs.#ctor(System.Data.Common.DbConnection)">
+      <summary>初始化 <see cref="T:WebMatrix.Data.ConnectionEventArgs" /> 类的新实例。</summary>
+      <param name="connection">与该事件关联的连接。</param>
+    </member>
+    <member name="P:WebMatrix.Data.ConnectionEventArgs.Connection">
+      <summary>获取与该事件关联的连接。</summary>
+      <returns>已打开的连接。</returns>
+    </member>
+    <member name="T:WebMatrix.Data.Database">
+      <summary>提供用于访问和管理存储在数据库中的数据的方法和属性。</summary>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Close">
+      <summary>关闭打开的数据库。</summary>
+    </member>
+    <member name="P:WebMatrix.Data.Database.Connection">
+      <summary>获取到数据库的当前连接。</summary>
+      <returns>连接。</returns>
+    </member>
+    <member name="E:WebMatrix.Data.Database.ConnectionOpened">
+      <summary>当 <see cref="T:WebMatrix.Data.Database" /> 实例打开新的数据库连接时发生。</summary>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Dispose">
+      <summary>释放由 <see cref="T:WebMatrix.Data.Database" /> 实例使用的所有资源。</summary>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Dispose(System.Boolean)">
+      <summary>释放由 <see cref="T:WebMatrix.Data.Database" /> 实例使用的非托管资源，并选择性地释放托管资源。</summary>
+      <param name="disposing">若为 true，则同时释放托管资源和非托管资源；若为 false，则仅释放非托管资源。</param>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Execute(System.String,System.Object[])">
+      <summary>执行非查询 SQL 语句。</summary>
+      <returns>受 SQL 语句影响的记录的计数。</returns>
+      <param name="commandText">要执行的 SQL 语句。</param>
+      <param name="args">（可选）要传递给 SQL 语句的参数。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="commandText" /> 为 null 或空。</exception>
+    </member>
+    <member name="M:WebMatrix.Data.Database.GetLastInsertId">
+      <summary>返回最近一次插入的行的标识列。</summary>
+      <returns>最近一次插入的行的 ID。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Open(System.String)">
+      <summary>使用指定的文件名或指定的连接字符串打开到数据库的连接。</summary>
+      <returns>数据库实例。</returns>
+      <param name="name">与要打开的数据库关联的名称。<paramref name="name" /> 可以指定 App_Data 文件夹中的 .sdf 或 .mdf 数据库文件。（不包括文件扩展名。）此外，<paramref name="name" /> 也可以指定 Web.config 文件中的连接字符串的名称。</param>
+    </member>
+    <member name="M:WebMatrix.Data.Database.OpenConnectionString(System.String)">
+      <summary>使用指定的连接字符串打开到数据库的连接。</summary>
+      <returns>数据库实例。</returns>
+      <param name="connectionString">连接字符串，其中包含用于连接数据库的信息。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="connectionString" /> 为 null 或空。</exception>
+    </member>
+    <member name="M:WebMatrix.Data.Database.OpenConnectionString(System.String,System.String)">
+      <summary>使用连接字符串和指定的提供程序打开到数据库的连接。</summary>
+      <returns>数据库实例。</returns>
+      <param name="connectionString">连接字符串，其中包含用于连接数据库的信息。</param>
+      <param name="providerName">（可选）用于连接到数据源的 .NET Framework 数据提供程序的名称。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="connectionString" /> 为 null 或空。</exception>
+    </member>
+    <member name="M:WebMatrix.Data.Database.Query(System.String,System.Object[])">
+      <summary>执行 SQL 查询，该查询将返回行的列表作为结果。</summary>
+      <returns>由 SQL 查询返回的行。</returns>
+      <param name="commandText">要执行的 SQL 查询。</param>
+      <param name="parameters">（可选）要传递给 SQL 查询的参数。</param>
+    </member>
+    <member name="M:WebMatrix.Data.Database.QuerySingle(System.String,System.Object[])">
+      <summary>执行 SQL 查询，该查询将返回一行作为结果。</summary>
+      <returns>由 SQL 查询返回的一行。</returns>
+      <param name="commandText">要执行的 SQL 查询。</param>
+      <param name="args">（可选）要传递给 SQL 查询的参数。</param>
+    </member>
+    <member name="M:WebMatrix.Data.Database.QueryValue(System.String,System.Object[])">
+      <summary>执行 SQL 查询，该查询将返回一个标量值作为结果。</summary>
+      <returns>由 SQL 查询返回的标量值。</returns>
+      <param name="commandText">要执行的 SQL 查询。</param>
+      <param name="args">（可选）要传递给 SQL 查询的参数。</param>
+    </member>
+    <member name="T:WebMatrix.Data.DynamicRecord">
+      <summary>使用自定义类型描述符和动态语言运行时 (DLR) 功能表示数据记录。</summary>
+    </member>
+    <member name="P:WebMatrix.Data.DynamicRecord.Columns">
+      <summary>返回一个包含 <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例中每一列名称的列表。</summary>
+      <returns>包含每一列名称的列表。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.GetDynamicMemberNames">
+      <summary>返回包含 <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例的所有动态成员的名称的列表。</summary>
+      <returns>包含每个动态成员的名称的列表。</returns>
+    </member>
+    <member name="P:WebMatrix.Data.DynamicRecord.Item(System.Int32)">
+      <summary>使用指定的索引，返回 <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例中的列值。</summary>
+      <returns>指定列的值。</returns>
+      <param name="index">列（包含要返回的值）的从零开始的索引。</param>
+    </member>
+    <member name="P:WebMatrix.Data.DynamicRecord.Item(System.String)">
+      <summary>使用指定的名称，返回 <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例中的列值。</summary>
+      <returns>指定列的值。</returns>
+      <param name="name">包含要返回的值的列的名称。名称匹配不区分大小写。</param>
+      <exception cref="T:System.InvalidOperationException">
+        <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例不包含名称与指定名称匹配（不区分大小写）的列。</exception>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetAttributes">
+      <summary>返回此组件实例的自定义特性列表。</summary>
+      <returns>所有情况下均为 <see cref="P:System.ComponentModel.AttributeCollection.Empty" />。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetClassName">
+      <summary>返回此组件实例的类名称。</summary>
+      <returns>所有情况下均为 null。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetComponentName">
+      <summary>返回此组件实例的名称。</summary>
+      <returns>所有情况下均为 null。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetConverter">
+      <summary>返回此组件实例的类型转换器。</summary>
+      <returns>所有情况下均为 null。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent">
+      <summary>返回此组件实例的默认事件。</summary>
+      <returns>所有情况下均为 null。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty">
+      <summary>返回此组件实例的默认属性。</summary>
+      <returns>所有情况下均为 null。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)">
+      <summary>返回此组件实例的指定类型的编辑器。</summary>
+      <returns>所有情况下均为 null。</returns>
+      <param name="editorBaseType">此对象的编辑器。此参数的值被此实现忽略，并且不会影响此方法的结果。</param>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents">
+      <summary>返回此组件实例的事件。</summary>
+      <returns>所有情况下均为 <see cref="P:System.ComponentModel.EventDescriptorCollection.Empty" />。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])">
+      <summary>使用指定的筛选器，返回此组件实例的事件。</summary>
+      <returns>所有情况下均为 <see cref="P:System.ComponentModel.EventDescriptorCollection.Empty" />。</returns>
+      <param name="attributes">用作筛选器的数组。此参数的值被此实现忽略，并且不会影响此方法的结果。</param>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties">
+      <summary>返回此组件实例的属性。</summary>
+      <returns>表示此组件实例的属性的集合。</returns>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])">
+      <summary>使用指定的筛选器，返回此组件实例的属性。</summary>
+      <returns>表示此组件实例的属性的集合。</returns>
+      <param name="attributes">用作筛选器的数组。此参数的值被此实现忽略，并且不会影响此方法的结果。</param>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+      <summary>返回包含指定属性的对象。</summary>
+      <returns>此 <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例。</returns>
+      <param name="pd">要获取其所有者的属性。</param>
+    </member>
+    <member name="M:WebMatrix.Data.DynamicRecord.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+      <summary>使用指定名称获取 <see cref="T:WebMatrix.Data.DynamicRecord" /> 成员的值。</summary>
+      <returns>所有情况下均为 true。</returns>
+      <param name="binder">提供有关 get 操作的信息。</param>
+      <param name="result">此方法返回时，将包含成员的值，该值可以为 null。该参数未经初始化即被传递。</param>
+      <exception cref="T:System.InvalidOperationException">
+        <see cref="T:WebMatrix.Data.DynamicRecord" /> 实例不包含其名称与 <paramref name="binder" /> 参数指定的名称匹配（不区分大小写）的成员。</exception>
+    </member>
+  </members>
+</doc>

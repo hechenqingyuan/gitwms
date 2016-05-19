@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report TextQuality="Regular" ReportInfo.Description="Demonstrates how to use expressions in the matrix. To do this:&#13;&#10;&#13;&#10;- create a matrix by dragging data from the Data Dictionary window;&#13;&#10;&#13;&#10;- doubleclick the item that you want to edit, and change the expression." ReportInfo.Created="05/15/2008 00:47:48" ReportInfo.Modified="10/04/2008 00:50:25" ReportInfo.CreatorVersion="1.0.0.0">
+  <Dictionary>
+    <TableDataSource Name="Categories" ReferenceName="NorthWind.Categories">
+      <Column Name="CategoryID" DataType="System.Int32"/>
+      <Column Name="CategoryName" DataType="System.String"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="Picture" DataType="System.Byte[]" BindableControl="Picture"/>
+    </TableDataSource>
+    <TableDataSource Name="Customers" ReferenceName="NorthWind.Customers">
+      <Column Name="CustomerID" DataType="System.String"/>
+      <Column Name="CompanyName" DataType="System.String"/>
+      <Column Name="ContactName" DataType="System.String"/>
+      <Column Name="ContactTitle" DataType="System.String"/>
+      <Column Name="Address" DataType="System.String"/>
+      <Column Name="City" DataType="System.String"/>
+      <Column Name="Region" DataType="System.String"/>
+      <Column Name="PostalCode" DataType="System.String"/>
+      <Column Name="Country" DataType="System.String"/>
+      <Column Name="Phone" DataType="System.String"/>
+      <Column Name="Fax" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Employees" ReferenceName="NorthWind.Employees">
+      <Column Name="EmployeeID" DataType="System.Int32"/>
+      <Column Name="LastName" DataType="System.String"/>
+      <Column Name="FirstName" DataType="System.String"/>
+      <Column Name="Title" DataType="System.String"/>
+      <Column Name="TitleOfCourtesy" DataType="System.String"/>
+      <Column Name="BirthDate" DataType="System.DateTime"/>
+      <Column Name="HireDate" DataType="System.DateTime"/>
+      <Column Name="Address" DataType="System.String"/>
+      <Column Name="City" DataType="System.String"/>
+      <Column Name="Region" DataType="System.String"/>
+      <Column Name="PostalCode" DataType="System.String"/>
+      <Column Name="Country" DataType="System.String"/>
+      <Column Name="HomePhone" DataType="System.String"/>
+      <Column Name="Extension" DataType="System.String"/>
+      <Column Name="Photo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="Notes" DataType="System.String"/>
+      <Column Name="ReportsTo" DataType="System.Int32"/>
+    </TableDataSource>
+    <TableDataSource Name="Order Details" ReferenceName="NorthWind.Order Details">
+      <Column Name="OrderID" DataType="System.Int32"/>
+      <Column Name="ProductID" DataType="System.Int32"/>
+      <Column Name="UnitPrice" DataType="System.Decimal"/>
+      <Column Name="Quantity" DataType="System.Int16"/>
+      <Column Name="Discount" DataType="System.Single"/>
+    </TableDataSource>
+    <TableDataSource Name="Orders" ReferenceName="NorthWind.Orders">
+      <Column Name="OrderID" DataType="System.Int32"/>
+      <Column Name="CustomerID" DataType="System.String"/>
+      <Column Name="EmployeeID" DataType="System.Int32"/>
+      <Column Name="OrderDate" DataType="System.DateTime"/>
+      <Column Name="RequiredDate" DataType="System.DateTime"/>
+      <Column Name="ShippedDate" DataType="System.DateTime"/>
+      <Column Name="ShipVia" DataType="System.Int32"/>
+      <Column Name="Freight" DataType="System.Decimal"/>
+      <Column Name="ShipName" DataType="System.String"/>
+      <Column Name="ShipAddress" DataType="System.String"/>
+      <Column Name="ShipCity" DataType="System.String"/>
+      <Column Name="ShipRegion" DataType="System.String"/>
+      <Column Name="ShipPostalCode" DataType="System.String"/>
+      <Column Name="ShipCountry" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Products" ReferenceName="NorthWind.Products">
+      <Column Name="ProductID" DataType="System.Int32"/>
+      <Column Name="ProductName" DataType="System.String"/>
+      <Column Name="SupplierID" DataType="System.Int32"/>
+      <Column Name="CategoryID" DataType="System.Int32"/>
+      <Column Name="QuantityPerUnit" DataType="System.String"/>
+      <Column Name="UnitPrice" DataType="System.Decimal"/>
+      <Column Name="UnitsInStock" DataType="System.Int16"/>
+      <Column Name="UnitsOnOrder" DataType="System.Int16"/>
+      <Column Name="ReorderLevel" DataType="System.Int16"/>
+      <Column Name="Discontinued" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="EAN13" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Shippers" ReferenceName="NorthWind.Shippers">
+      <Column Name="ShipperID" DataType="System.Int32"/>
+      <Column Name="CompanyName" DataType="System.String"/>
+      <Column Name="Phone" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="Suppliers" ReferenceName="NorthWind.Suppliers">
+      <Column Name="SupplierID" DataType="System.Int32"/>
+      <Column Name="CompanyName" DataType="System.String"/>
+      <Column Name="ContactName" DataType="System.String"/>
+      <Column Name="ContactTitle" DataType="System.String"/>
+      <Column Name="Address" DataType="System.String"/>
+      <Column Name="City" DataType="System.String"/>
+      <Column Name="Region" DataType="System.String"/>
+      <Column Name="PostalCode" DataType="System.String"/>
+      <Column Name="Country" DataType="System.String"/>
+      <Column Name="Phone" DataType="System.String"/>
+      <Column Name="Fax" DataType="System.String"/>
+      <Column Name="HomePage" DataType="System.String"/>
+    </TableDataSource>
+    <Relation Name="SuppliersProducts" ReferenceName="NorthWind.SuppliersProducts" ParentDataSource="Suppliers" ChildDataSource="Products" ParentColumns="SupplierID" ChildColumns="SupplierID"/>
+    <Relation Name="CategoriesProducts" ReferenceName="NorthWind.CategoriesProducts" ParentDataSource="Categories" ChildDataSource="Products" ParentColumns="CategoryID" ChildColumns="CategoryID"/>
+    <Relation Name="EmployeesOrders" ReferenceName="NorthWind.EmployeesOrders" ParentDataSource="Employees" ChildDataSource="Orders" ParentColumns="EmployeeID" ChildColumns="EmployeeID"/>
+    <Relation Name="ShippersOrders" ReferenceName="NorthWind.ShippersOrders" ParentDataSource="Shippers" ChildDataSource="Orders" ParentColumns="ShipperID" ChildColumns="ShipVia"/>
+    <Relation Name="CustomersOrders" ReferenceName="NorthWind.CustomersOrders" ParentDataSource="Customers" ChildDataSource="Orders" ParentColumns="CustomerID" ChildColumns="CustomerID"/>
+    <Relation Name="OrdersOrderDetails" ReferenceName="NorthWind.OrdersOrderDetails" ParentDataSource="Orders" ChildDataSource="Order Details" ParentColumns="OrderID" ChildColumns="OrderID"/>
+    <Relation Name="ProductsOrderDetails" ReferenceName="NorthWind.ProductsOrderDetails" ParentDataSource="Products" ChildDataSource="Order Details" ParentColumns="ProductID" ChildColumns="ProductID"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="207.9">
+      <MatrixObject Name="Matrix1" Top="47.25" Width="319.18" Height="128.88" FixedRows="1" FixedColumns="1" DataSource="Order Details" Style="Green">
+        <MatrixColumns>
+          <Header Expression="[Order Details.Orders.Employees.FirstName] + &quot; &quot; + [Order Details.Orders.Employees.LastName]"/>
+        </MatrixColumns>
+        <MatrixRows>
+          <Header Expression="[Order Details.Products.ProductName]"/>
+        </MatrixRows>
+        <MatrixCells>
+          <Cell Expression="[Order Details.UnitPrice] * [Order Details.Quantity] * (decimal)(1 - [Order Details.Discount])"/>
+        </MatrixCells>
+        <TableColumn Name="Column1" Width="93.65" MaxWidth="151.2" AutoSize="true"/>
+        <TableColumn Name="Column2" Width="189" MaxWidth="189" AutoSize="true"/>
+        <TableColumn Name="Column3" Width="36.53" AutoSize="true"/>
+        <TableRow Name="Row1" Height="68.71" AutoSize="true">
+          <TableCell Name="Cell1" Border.Lines="All" Border.Color="White" Fill.Color="123, 164, 0" Text="Product" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" TextFill.Color="White"/>
+          <TableCell Name="Cell2" Border.Lines="All" Border.Color="White" Fill.Color="123, 164, 0" Text="[Order Details.Orders.Employees.FirstName] + &quot; &quot; + [Order Details.Orders.Employees.LastName]" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" TextFill.Color="White"/>
+          <TableCell Name="Cell7" Border.Lines="All" Border.Color="White" Fill.Color="123, 164, 0" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" TextFill.Color="White"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="42.96" AutoSize="true">
+          <TableCell Name="Cell3" Border.Lines="All" Border.Color="White" Fill.Color="123, 164, 0" Text="[ProductName]" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" TextFill.Color="White"/>
+          <TableCell Name="Cell4" Border.Lines="All" Border.Color="White" Fill.Color="158, 210, 0" Text="[[Order Details.UnitPrice] * [Order Details.Quantity] * (decimal)(1 - [Order Details.Discount])]" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 8pt" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="5"/>
+          <TableCell Name="Cell8" Border.Lines="All" Border.Color="White" Fill.Color="158, 210, 0" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="5"/>
+        </TableRow>
+        <TableRow Name="Row3" Height="17.21" AutoSize="true">
+          <TableCell Name="Cell5" Border.Lines="All" Border.Color="White" Fill.Color="123, 164, 0" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" TextFill.Color="White"/>
+          <TableCell Name="Cell6" Border.Lines="All" Border.Color="White" Fill.Color="158, 210, 0" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="5"/>
+          <TableCell Name="Cell9" Border.Lines="All" Border.Color="White" Fill.Color="158, 210, 0" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 8pt, style=Bold" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.CurrencySymbol="$" Format.PositivePattern="0" Format.NegativePattern="5"/>
+        </TableRow>
+      </MatrixObject>
+      <TextObject Name="Text1" Left="9.45" Top="9.45" Width="415.8" Height="18.9" Text="Products by Employees" Font="Tahoma, 10pt, style=Bold"/>
+    </ReportTitleBand>
+  </ReportPage>
+</Report>

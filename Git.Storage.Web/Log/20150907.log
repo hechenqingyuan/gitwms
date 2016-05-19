@@ -1,0 +1,3665 @@
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:25:30
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:39
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:47
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:48
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:48
+日志内容:分页查询SQL语句组装时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:48
+日志内容:分页查询SQL语句查询时间:6
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:52
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[ReportType]=@0_t0_ReportType AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportType]=@0_t0_ReportType AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:52
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:26:52
+日志内容:分页查询SQL语句查询时间:13
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:29:58
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:01
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:01
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:01
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:12
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:12
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:12
+日志内容:分页查询SQL语句查询时间:10
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:19
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:19
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:30:19
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:50
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:52
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:54
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:54
+日志内容:分页查询SQL语句组装时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:40:54
+日志内容:分页查询SQL语句查询时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:11
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:11
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:11
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:11
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:37
+日志内容: SQL :UPDATE [dbo].[Reports] SET [IsDelete]=@IsDelete  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:38
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:38
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:41:38
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:17
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:18
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:18
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:18
+日志内容:分页查询SQL语句查询时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:42
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:42
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:42
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:42:42
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:46:58
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:46:58
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:46:58
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:46:58
+日志内容:分页查询SQL语句查询时间:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:47:57
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:47:59
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:47:59
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:47:59
+日志内容:分页查询SQL语句查询时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:48:01
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:17
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:17
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:17
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_3,@ReportNum_3,@InputNo_3,@ParamName_3,@ShowName_3,@ParamType_3,@ParamData_3,@DefaultValue_3,@ParamElement_3,@Remark_3);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_4,@ReportNum_4,@InputNo_4,@ParamName_4,@ShowName_4,@ParamType_4,@ParamData_4,@DefaultValue_4,@ParamElement_4,@Remark_4);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_5,@ReportNum_5,@InputNo_5,@ParamName_5,@ShowName_5,@ParamType_5,@ParamData_5,@DefaultValue_5,@ParamElement_5,@Remark_5);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_6,@ReportNum_6,@InputNo_6,@ParamName_6,@ShowName_6,@ParamType_6,@ParamData_6,@DefaultValue_6,@ParamElement_6,@Remark_6);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_7,@ReportNum_7,@InputNo_7,@ParamName_7,@ShowName_7,@ParamType_7,@ParamData_7,@DefaultValue_7,@ParamElement_7,@Remark_7);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_8,@ReportNum_8,@InputNo_8,@ParamName_8,@ShowName_8,@ParamType_8,@ParamData_8,@DefaultValue_8,@ParamElement_8,@Remark_8);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:24
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:24
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:24
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:49:24
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:51:00
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:51:03
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:51:03
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:51:03
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:58:41
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:58:42
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:58:42
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:58:42
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:47
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:50
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:51
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:51
+日志内容:分页查询SQL语句组装时间:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 8:59:51
+日志内容:分页查询SQL语句查询时间:4
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:00:37
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:00:39
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:00:39
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:00:39
+日志内容:分页查询SQL语句查询时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:02:34
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:02:35
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:02:35
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:02:35
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:05:53
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:05:53
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:05:53
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:05:53
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:00
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:01
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:01
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:01
+日志内容:分页查询SQL语句查询时间:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:02
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:02
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:02
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:03
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:03
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:03
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:12
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:13
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:13
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:13
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:14
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:14
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:14
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:15
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:15
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:15
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:23
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:23
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:23
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:44
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:44
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:06:44
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:36
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:39
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:41
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:41
+日志内容:分页查询SQL语句组装时间:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:41
+日志内容:分页查询SQL语句查询时间:4
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:44
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:44
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:44
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:48
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:48
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:48
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:50
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[Status]=@0_t0_Status AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:50
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:08:50
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:26
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:29
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:30
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:30
+日志内容:分页查询SQL语句组装时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:30
+日志内容:分页查询SQL语句查询时间:7
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:32
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[ReportName] LIKE @0_t0_ReportName AND t0.[IsDelete]=@1_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportName] LIKE @0_t0_ReportName AND t0.[IsDelete]=@1_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:32
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:10:32
+日志内容:分页查询SQL语句查询时间:12
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:17
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:17
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:17
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:17
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:53
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:55
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:58
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:58
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:58
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:58
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:59
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:15:59
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:04
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:05
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:05
+日志内容:分页查询SQL语句组装时间:7
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:05
+日志内容:分页查询SQL语句查询时间:13
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:15
+日志内容: SQL :UPDATE [dbo].[Reports] SET [IsDelete]=@IsDelete  WHERE Reports.[ReportNum] IN ('00007','00008')
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:18
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:18
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:18
+日志内容:分页查询SQL语句查询时间:5
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:37
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:37
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:37
+日志内容:分页查询SQL语句组装时间:0
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:16:37
+日志内容:分页查询SQL语句查询时间:1
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:26:45
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:42
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:45
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:47
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:47
+日志内容:分页查询SQL语句组装时间:4
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:47
+日志内容:分页查询SQL语句查询时间:19
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:54
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:54
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:42:54
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:43:33
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:43:33
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:43:33
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:46:11
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:46:16
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:46:21
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_3,@ReportNum_3,@InputNo_3,@ParamName_3,@ShowName_3,@ParamType_3,@ParamData_3,@DefaultValue_3,@ParamElement_3,@Remark_3);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_4,@ReportNum_4,@InputNo_4,@ParamName_4,@ShowName_4,@ParamType_4,@ParamData_4,@DefaultValue_4,@ParamElement_4,@Remark_4);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_5,@ReportNum_5,@InputNo_5,@ParamName_5,@ShowName_5,@ParamType_5,@ParamData_5,@DefaultValue_5,@ParamElement_5,@Remark_5);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_6,@ReportNum_6,@InputNo_6,@ParamName_6,@ShowName_6,@ParamType_6,@ParamData_6,@DefaultValue_6,@ParamElement_6,@Remark_6);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_7,@ReportNum_7,@InputNo_7,@ParamName_7,@ShowName_7,@ParamType_7,@ParamData_7,@DefaultValue_7,@ParamElement_7,@Remark_7);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_8,@ReportNum_8,@InputNo_8,@ParamName_8,@ShowName_8,@ParamType_8,@ParamData_8,@DefaultValue_8,@ParamElement_8,@Remark_8);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:47:43
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:47:43
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 9:47:43
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:01
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:15
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:39
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:39
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:40
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:48
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:52
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:49:53
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:00
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:56:01
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:14
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:32
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:32
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:32
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:34
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:34
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:34
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:41
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:46
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 12:57:46
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:41
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:41
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:02:48
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:43
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:43
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:43
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:43
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:43
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:44
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:46
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:46
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:46
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:46
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:47
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:47
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:47
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:07:47
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:14
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:20
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:20
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:20
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:21
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:21
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:21
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:21
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:10:21
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:51
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:12:54
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:14:57
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:15:02
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:15
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:18
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:18
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:18
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:19
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:19
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:19
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:19
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:16:19
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:02
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:02
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:02
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:46
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:46
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:17:46
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:30:28
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:30:28
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:30:28
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:33:31
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:33:31
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:33:31
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:37:18
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:37:18
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:37:18
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:40:42
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:40:42
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:40:42
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:51
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:52
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:52
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:54:59
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:14
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:16
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:20
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:23
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 13:56:23
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:56
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:17:58
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:01
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:01
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:02
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 14:18:19
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:55
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:57
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:58
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:58
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:58
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:58
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:06:58
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:07:06
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:07:25
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:07:25
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 15:07:25
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:32
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:08:37
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:11:50
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:14:02
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:14:50
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:14:50
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:14:50
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:34
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:35
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:35
+日志内容:分页查询SQL语句组装时间:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:35
+日志内容:分页查询SQL语句查询时间:8
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:39
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:39
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:41
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:58
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:59
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:59
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:15:59
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:16:56
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:17:39
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:17:39
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:17:39
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:27
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:27
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:27
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:40
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:41
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:41
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:18:41
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:06
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:06
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:06
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:06
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:06
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:07
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:08
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:12
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:13
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:13
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:16
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:59
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:59
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:21:59
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:19
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:20
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:20
+日志内容:分页查询SQL语句组装时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:20
+日志内容:分页查询SQL语句查询时间:12
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:23
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:23
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:23
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:35
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:35
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:35
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:22:35
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:23:42
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:23:43
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:23:43
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:23:43
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:53
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:54
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:26:57
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:04
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:27:09
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:10
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:10
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:10
+日志内容: SQL :INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_0,@ReportNum_0,@InputNo_0,@ParamName_0,@ShowName_0,@ParamType_0,@ParamData_0,@DefaultValue_0,@ParamElement_0,@Remark_0);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_1,@ReportNum_1,@InputNo_1,@ParamName_1,@ShowName_1,@ParamType_1,@ParamData_1,@DefaultValue_1,@ParamElement_1,@Remark_1);INSERT INTO [dbo].[ReportParams]([ParamNum],[ReportNum],[InputNo],[ParamName],[ShowName],[ParamType],[ParamData],[DefaultValue],[ParamElement],[Remark]) VALUES(@ParamNum_2,@ReportNum_2,@InputNo_2,@ParamName_2,@ShowName_2,@ParamType_2,@ParamData_2,@DefaultValue_2,@ParamElement_2,@Remark_2);
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:49
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:28:56
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:08
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:08
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:24
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:25
+日志内容: SQL: DECLARE @StartIndex INT SET @StartIndex = 1 SELECT @RecordCount=COUNT(*) FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete IF (@PageIndex<=1) BEGIN SET @PageIndex=1 END SET @StartIndex = ( @PageIndex - 1 ) * @PageSize + 1 ; WITH TempTable AS( SELECT ROW_NUMBER() OVER (ORDER BY t0.[ID] ASC) RowNumber,t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete ) SELECT * FROM TempTable WHERE RowNumber BETWEEN (@StartIndex) AND (@PageIndex * @PageSize) 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:25
+日志内容:分页查询SQL语句组装时间:3
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:25
+日志内容:分页查询SQL语句查询时间:11
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:33
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:33
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:34
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:30:51
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:31:36
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:31:36
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:FilePath:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommandFiles.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:config files length:2
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbCommonCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:fileName:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\DbReportCommand.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:databaseFolder:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:databaseFile:Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:反序列化:M:\项目管理\仓库管理系统标准版\仓库系统Win\WMS_Base\trunk\Git.Storage.Web\Configs\Data\Database.config
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:41
+日志内容:instance.ConnectionString:Server=127.0.0.1;database=JooWMS;user id=sa;Password=000000
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:42
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL: SELECT t0.[ID],t0.[UserName],t0.[PassWord],t0.[UserCode],t0.[RealName],t0.[Email],t0.[Mobile],t0.[Phone],t0.[CreateTime],t0.[CreateIp],t0.[CreateUser],t0.[LoginCount],t0.[Picture],t0.[UpdateTime],t0.[IsDelete],t0.[Status],t0.[DepartNum],t0.[ParentCode],t0.[RoleNum],t0.[Remark],t1.[RoleName] AS RoleName FROM [dbo].[Admin] AS t0  LEFT JOIN [dbo].[SysRole] AS t1 ON  t0.[RoleNum]=t1.[RoleNum]  WHERE t0.[UserName]=@0_t0_UserName AND t0.[PassWord]=@1_t0_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserCode]=@0_Admin_UserCode
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL :UPDATE [dbo].[Admin] SET [LoginCount]=@LoginCount  WHERE Admin.[UserName]=@0_Admin_UserName AND Admin.[PassWord]=@1_Admin_PassWord
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL: SELECT t0.[ID],t0.[ResNum],t0.[ResName],t0.[ParentNum],t0.[Depth],t0.[ParentPath],t0.[ChildCount],t0.[Sort],t0.[IsHide],t0.[IsDelete],t0.[Url],t0.[CssName],t0.[CreateTime],t0.[Depart],t0.[ResType],t0.[UpdateTime],t0.[CreateUser],t0.[UpdateUser],t0.[CreateIp],t0.[UpdateIp],t0.[Remark] FROM [dbo].[SysResource] AS t0   WHERE t0.[IsDelete]=@0_t0_IsDelete 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL: SELECT t0.[ID],t0.[RoleNum],t0.[ResNum],t0.[ResType] FROM [dbo].[SysRelation] AS t0   
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:47
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:32:51
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:03
+日志内容:添加数据行主键为标识列: JooWMS.ID
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:03
+日志内容: SQL :INSERT INTO [dbo].[Reports]([ReportNum],[ReportName],[ReportType],[Remark],[DataSource],[DsType],[FileName],[IsDelete],[Status],[CreateTime]) VALUES(@ReportNum,@ReportName,@ReportType,@Remark,@DataSource,@DsType,@FileName,@IsDelete,@Status,@CreateTime);SELECT TOP 1 ID FROM [dbo].[Reports] WHERE [ID]=@@IDENTITY 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:16
+日志内容: SQL: SELECT * FROM [dbo].[Storage]
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:16
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:16
+日志内容: SQL: SELECT t0.[ID],t0.[ParamNum],t0.[ReportNum],t0.[InputNo],t0.[ParamName],t0.[ShowName],t0.[ParamType],t0.[ParamData],t0.[DefaultValue],t0.[ParamElement],t0.[Remark] FROM [dbo].[ReportParams] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum 
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:22
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:22
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:22
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:45
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:45
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:45
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:57
+日志内容: SQL: SELECT t0.[ID],t0.[ReportNum],t0.[ReportName],t0.[ReportType],t0.[Remark],t0.[DataSource],t0.[DsType],t0.[FileName],t0.[IsDelete],t0.[Status],t0.[CreateTime] FROM [dbo].[Reports] AS t0   WHERE t0.[ReportNum]=@0_t0_ReportNum AND t0.[IsDelete]=@1_t0_IsDelete
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:57
+日志内容: SQL: DELETE FROM [dbo].[ReportParams]  WHERE ReportParams.[ReportNum]=@0_ReportParams_ReportNum
+
+日志级别:[info]
+日志位置:Git.Framework.Resource.ResourceManager
+日志时间:2015/9/7 20:33:57
+日志内容: SQL :UPDATE [dbo].[Reports] SET [ReportName]=@ReportName,[ReportType]=@ReportType,[Remark]=@Remark,[DataSource]=@DataSource,[DsType]=@DsType,[FileName]=@FileName  WHERE Reports.[ReportNum]=@0_Reports_ReportNum
+

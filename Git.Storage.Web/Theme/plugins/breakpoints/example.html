@@ -1,0 +1,112 @@
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script  type="text/javascript" src="http://xoxco.com/projects/code/breakpoints/breakpoints.js"></script>
+	<script>
+	
+		$(function() { 
+		
+
+			$(window).bind('exitBreakpoint320',function() {
+				$('#log').append('<p>Exiting 320 breakpoint</p>');
+			});
+			$(window).bind('enterBreakpoint320',function() {
+				$('#log').append('<p>Entering 320 breakpoint</p>');
+			});
+
+			$(window).bind('exitBreakpoint480',function() {
+				$('#log').append('<p>Exiting 480 breakpoint</p>');
+			});
+			$(window).bind('enterBreakpoint480',function() {
+				$('#log').append('<p>Entering 480 breakpoint</p>');
+			});
+			$(window).bind('exitBreakpoint768',function() {
+				$('#log').append('<p>Exiting 768 breakpoint</p>');
+			});
+			$(window).bind('enterBreakpoint768',function() {
+				$('#log').append('<p>Entering 768 breakpoint</p>');
+			});
+
+			$(window).bind('exitBreakpoint1024',function() {
+				$('#log').append('<p>Exiting 1024 breakpoint</p>');
+			});
+			$(window).bind('enterBreakpoint1024',function() {
+				$('#log').append('<p>Entering 1024 breakpoint</p>');
+			});
+
+			$(window).setBreakpoints();
+
+			$('#distinct').bind('click',function() {
+				$(window).resetBreakpoints();
+				$(window).setBreakpoints({distinct: $('#distinct').is(":checked")});
+				$(window).resize();
+			});
+
+		});
+		
+		
+	
+	</script>
+	<style>
+
+
+		#log p {
+			font-size: 12px;
+			padding: 5px 10px;
+		}
+
+		#status {
+			border:1px solid #000;
+			margin-bottom:20px;
+		}
+		#status p { color: #CCC;  margin:0px; padding:10px;}
+
+		.breakpoint-1024 #status p.breakpoint1024 { color: #000; font-weight:bold; background: #F0F0F0; }
+		.breakpoint-768 #status p.breakpoint768 { color: #000; font-weight:bold; background: #F0F0F0;}
+		.breakpoint-480 #status p.breakpoint480 { color: #000; font-weight:bold; background: #F0F0F0; }
+
+		.breakpoint-320 #status p.breakpoint320 { color: #000; font-weight:bold; background: #F0F0F0; }
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="instructions">
+
+		<h3>Demo</h3>
+
+		<p>
+			<strong>Resize your browser window now and watch events in the box below.</strong>
+		</p>
+		
+		<p>
+			<input name="distinct" type="checkbox" id="distinct" checked /> <label for="distinct">Use only largest available breakpoint</label>
+		</p>
+	</div>
+	<div id="log">
+	
+			
+		<h3>Active Breakpoints</h3>
+		<div id="status">
+		<p class="breakpoint1024">1024</p>
+		<p class="breakpoint768">768</p>
+		<p class="breakpoint480">480</p>
+		<p class="breakpoint320">320</p>
+		</div>
+		
+		<h3>Event Log:</h3>
+		
+	</div>
+
+
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-84020-8");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+</body>

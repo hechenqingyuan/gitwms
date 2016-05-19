@@ -1,0 +1,115 @@
+﻿@{
+    Layout = null;
+}
+
+@using FastReport;
+@using FastReport.Web;
+@using Git.Framework.DataTypes;
+@using Git.Framework.DataTypes.ExtensionMethods;
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+    @WebReportGlobals.Styles()
+    @WebReportGlobals.Scripts()
+</head>
+<body class="fixed-top">
+    @Html.Partial("_Top")
+    <div id="container" class="row-fluid @ViewBag.MenuStatus">
+        @Html.Partial("_LeftMenu")
+        <div id="body">
+            <div id="widget-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button"></button>
+                    <h3>widget Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here will be a configuration form</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        @Html.Raw(ViewBag.NavMenu)
+                    </div>
+                </div>
+                
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="widget box light-grey">
+                            <div class="widget-title">
+                                <h4><i class="icon-globe"></i>查看报表</h4>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#widget-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="widget-body">
+                                <input type="hidden" id="txtReportNum" name="txtReportNum" value="@ViewBag.Entity.ReportNum" />
+                                @if ((ViewBag.ListParam as List<Git.Storage.Entity.Report.ReportParamsEntity>).Count>0)
+                                { 
+                                    <div class="row-fluid" id="tbSearch">
+                                        @foreach (Git.Storage.Entity.Report.ReportParamsEntity item in ViewBag.ListParam)
+                                        { 
+                                            <div class="span2">
+                                                <div class="control-group">
+                                                    <label class="control-label">@item.ShowName</label>
+                                                    <div class="controls">
+                                                        @if (item.ParamElement == ((int)Git.Storage.Common.EElementType.Date).ToString())
+                                                        {
+                                                            <input id="arg_@item.ParamName.Replace("@","")" name="arg_@item.ParamName.Replace("@","")" type="text" class="span12" placeholder="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
+                                                        }
+                                                        else if (item.ParamElement == ((int)Git.Storage.Common.EElementType.DateTime).ToString())
+                                                        {
+                                                            <input id="arg_@item.ParamName.Replace("@","")" name="arg_@item.ParamName.Replace("@","")" type="text" class="span12" placeholder="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+                                                        }
+                                                        else
+                                                        {
+                                                            <input id="arg_@item.ParamName.Replace("@","")" name="arg_@item.ParamName.Replace("@","")" type="text" class="span12" placeholder=""/>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                        <div class="span2">
+                                            <div class="control-group">
+                                                <label class="control-label">&nbsp;</label>
+                                                <div class="controls">
+                                                    <a id="gritter-remove-all" class="btn btn-info" href="javascript:void(0)" onclick="ReportListManager.Search()"><i class="icon-search"></i>&nbsp;搜索</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                }
+                                
+                                @ViewBag.WebReport.GetHtml()
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_Foot")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>编号</td>
+                <td>
+                    <input id="txtNum" name="txtNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value=""></td>
+            </tr>
+            <tr>
+                <td>名称</td>
+                <td>
+                    <input id="txtName" name="txtName" type="text" placeholder="请输入计量单位名称" class="input-medium" value=""></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

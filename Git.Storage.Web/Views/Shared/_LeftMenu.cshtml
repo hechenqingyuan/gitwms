@@ -1,0 +1,20 @@
+﻿
+<div id="sidebar" class="nav-collapse collapse">
+    <div class="sidebar-toggler hidden-phone"></div>
+    <ul>
+        @*<li class="start">
+            <a href="index.html">
+                <i class="icon-home"></i>
+                <span class="title">首页</span>
+            </a>
+        </li>*@
+        @Html.Raw(ViewBag.MenuItems)
+        <li class="">
+            <a href="/Home/LoginOut">
+                <i class="icon-user"></i>
+                <span class="title">退出系统</span>
+            </a>
+        </li>
+        
+    </ul>
+</div>

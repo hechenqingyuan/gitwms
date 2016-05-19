@@ -1,0 +1,92 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/11/2015 22:59:36" ReportInfo.Modified="09/11/2015 22:59:36" ReportInfo.CreatorVersion="2015.3.7.0">
+  <Dictionary>
+    <TableDataSource Name="Table1" ReferenceName="Data.Table1" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="OrderNum" DataType="System.String"/>
+      <Column Name="OutType" DataType="System.Int32"/>
+      <Column Name="ProductType" DataType="System.Int32"/>
+      <Column Name="StorageNum" DataType="System.String"/>
+      <Column Name="CusNum" DataType="System.String"/>
+      <Column Name="CusName" DataType="System.String"/>
+      <Column Name="Contact" DataType="System.String"/>
+      <Column Name="Phone" DataType="System.String"/>
+      <Column Name="Address" DataType="System.String"/>
+      <Column Name="ContractOrder" DataType="System.String"/>
+      <Column Name="Num" DataType="System.Double"/>
+      <Column Name="Amount" DataType="System.Double"/>
+      <Column Name="Weight" DataType="System.Double"/>
+      <Column Name="SendDate" DataType="System.DateTime"/>
+      <Column Name="Status" DataType="System.Int32"/>
+      <Column Name="IsDelete" DataType="System.Int32"/>
+      <Column Name="CreateTime" DataType="System.DateTime"/>
+      <Column Name="CreateUser" DataType="System.String"/>
+      <Column Name="AuditUser" DataType="System.String"/>
+      <Column Name="AuditeTime" DataType="System.DateTime"/>
+      <Column Name="PrintUser" DataType="System.String"/>
+      <Column Name="PrintTime" DataType="System.DateTime"/>
+      <Column Name="Reason" DataType="System.String"/>
+      <Column Name="OperateType" DataType="System.Int32"/>
+      <Column Name="EquipmentNum" DataType="System.String"/>
+      <Column Name="EquipmentCode" DataType="System.String"/>
+      <Column Name="Remark" DataType="System.String"/>
+      <Column Name="CreateUserName" DataType="System.String"/>
+      <Column Name="CusType" DataType="System.Int32"/>
+      <Column Name="ProductNames" DataType="System.String"/>
+      <Column Name="ListDetail" DataType="System.Collections.Generic.List`1[[Git.Storage.Entity.OutStorage.OutStoDetailEntity, Git.Storage.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"/>
+    </TableDataSource>
+    <TableDataSource Name="Table2" ReferenceName="Data.Table2" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="SnNum" DataType="System.String"/>
+      <Column Name="OrderNum" DataType="System.String"/>
+      <Column Name="ProductName" DataType="System.String"/>
+      <Column Name="BarCode" DataType="System.String"/>
+      <Column Name="ProductNum" DataType="System.String"/>
+      <Column Name="BatchNum" DataType="System.String"/>
+      <Column Name="LocalNum" DataType="System.String"/>
+      <Column Name="StorageNum" DataType="System.String"/>
+      <Column Name="Num" DataType="System.Double"/>
+      <Column Name="IsPick" DataType="System.Int32"/>
+      <Column Name="RealNum" DataType="System.Double"/>
+      <Column Name="OutPrice" DataType="System.Double"/>
+      <Column Name="Amount" DataType="System.Double"/>
+      <Column Name="ContractOrder" DataType="System.String"/>
+      <Column Name="ContractSn" DataType="System.String"/>
+      <Column Name="CreateTime" DataType="System.DateTime"/>
+      <Column Name="Size" DataType="System.String"/>
+      <Column Name="LocalName" DataType="System.String"/>
+      <Column Name="BackNum" DataType="System.Double"/>
+      <Column Name="Qty" DataType="System.Double"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="85.05">
+      <TextObject Name="Text1" Left="274.02" Top="9.45" Width="160.65" Height="47.25" Text="出库单" HorzAlign="Center" VertAlign="Center" Font="Arial, 20pt, style=Bold"/>
+      <TextObject Name="Text7" Left="500.77" Top="61.5" Width="170.1" Height="18.9" Text="[Table1.SendDate]" VertAlign="Center"/>
+      <TextObject Name="Text8" Left="434.6" Top="61.49" Width="113.4" Height="18.9" Text="送货时间：" VertAlign="Center"/>
+      <TextObject Name="Text10" Top="47.24" Width="66.15" Height="19.45" Text="客户：" VertAlign="Center"/>
+      <TextObject Name="Text11" Left="66.14" Top="47.24" Width="141.75" Height="18.9" Text="[Table1.CusName]" VertAlign="Center"/>
+      <TextObject Name="Text12" Top="66.14" Width="66.15" Height="18.9" Text="地址：" VertAlign="Center"/>
+      <TextObject Name="Text13" Left="66.15" Top="66.15" Width="141.75" Height="18.9" Text="[Table1.Address]" VertAlign="Center"/>
+      <TextObject Name="Text14" Top="9.45" Width="37.8" Height="18.9" Text="NO" VertAlign="Center"/>
+      <TextObject Name="Text15" Left="37.79" Top="9.45" Width="132.3" Height="18.9" Text="[Table1.OrderNum]" VertAlign="Center"/>
+      <BarcodeObject Name="Barcode2" Left="519.47" Width="145" Height="66.15" Text="[Table1.OrderNum]" AllowExpressions="true"/>
+    </ReportTitleBand>
+    <ColumnHeaderBand Name="ColumnHeader1" Width="718.2" Height="18.9">
+      <TextObject Name="Text22" Width="151.2" Height="18.9" Border.Lines="All" Text="产品名称" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text23" Left="151.19" Width="132.3" Height="18.9" Border.Lines="All" Text="条码" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text24" Left="283.48" Width="113.4" Height="18.9" Border.Lines="All" Text="批次" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text25" Left="396.87" Width="113.4" Height="18.9" Border.Lines="All" Text="库位" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text26" Left="510.25" Width="94.5" Height="18.9" Border.Lines="All" Text="价格" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text27" Left="604.77" Width="94.5" Height="18.9" Border.Lines="All" Text="数量" HorzAlign="Center" VertAlign="Center"/>
+    </ColumnHeaderBand>
+    <DataBand Name="Data1" Width="718.2" Height="18.9" DataSource="Table2">
+      <TextObject Name="Text16" Width="151.2" Height="18.9" Border.Lines="All" Text="[Table2.ProductName]" VertAlign="Center"/>
+      <TextObject Name="Text17" Left="151.19" Width="132.3" Height="18.9" Border.Lines="All" Text="[Table2.BarCode]" VertAlign="Center"/>
+      <TextObject Name="Text18" Left="283.48" Width="113.4" Height="18.9" Border.Lines="All" Text="[Table2.BatchNum]" VertAlign="Center"/>
+      <TextObject Name="Text19" Left="396.88" Width="113.4" Height="18.9" Border.Lines="All" Text="[Table2.LocalName]" VertAlign="Center"/>
+      <TextObject Name="Text21" Left="604.78" Width="94.5" Height="18.9" Border.Lines="All" Text="[Table2.Num]" VertAlign="Center"/>
+      <TextObject Name="Text28" Left="510.29" Width="94.5" Height="18.9" Border.Lines="All" Text="[Table2.OutPrice]" VertAlign="Center"/>
+    </DataBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery autocompleter</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.autocomplete.js"></script>
+	<script type="text/javascript">
+
+$(function() {
+
+	$("#ac1").autocomplete('search.php');
+
+	$("#flush").click(function() {
+		var ac = $("#ac1").data('autocompleter');
+		if (ac && $.isFunction(ac.cacheFlush)) {
+			ac.cacheFlush();
+		} else {
+			alert('Error flushing cache');
+		}
+	});
+
+	$("#ac2").autocomplete({
+		url: 'search.php',
+		sortFunction: function(a, b, filter) {
+			var f = filter.toLowerCase();
+			var fl = f.length;
+			var a1 = a.value.toLowerCase().substring(0, fl) == f ? '0' : '1';
+			var a1 = a1 + String(a.data[0]).toLowerCase();
+			var b1 = b.value.toLowerCase().substring(0, fl) == f ? '0' : '1';
+			var b1 = b1 + String(b.data[0]).toLowerCase();
+			if (a1 > b1) {
+				return 1;
+			}
+			if (a1 < b1) {
+				return -1;
+			}
+			return 0;
+		},
+		showResult: function(value, data) {
+			return '<span style="color:red">' + value + '</span>';
+		},
+		onItemSelect: function(item) {
+		    var text = 'You selected <b>' + item.value + '</b>';
+		    if (item.data.length) {
+		        text += ' <i>' + item.data.join(', ') + '</i>';
+		    }
+		    $("#last_selected").html(text);
+		},
+		maxItemsToShow: 5
+	});
+
+	$("#ac3").autocomplete({
+		data: [ ['apple', 1], ['apricot', 2], ['pear', 3], ['prume', 4]]
+	});
+
+    $("#toggle").click(function() {
+    	$("#hide").toggle(); // To test repositioning
+    });
+
+});
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="jquery.autocomplete.css">
+</head>
+
+<body>
+
+	<h1>jQuery autocomplete</h1>
+
+	<p class="info">This demo is built around a list of English bird names. For example, start typing <i>falcon</i> in one of the boxes below.</p>
+
+    <fieldset><legend>Debugging &amp; Testing</legend>
+        <p id="hide">HIDE THIS</p>
+    	<p><a href="#" id="flush">Fush the cache</a></p>
+    	<p><a href="#" id="toggle">Toggle hidden block</a></p>
+    </fieldset>
+
+	<h2>Demo 1</h2>
+
+	<form>
+		<input type="text" id="ac1">
+	</form>
+
+	<h2>Demo 2 (like demo 1, but sorted on scientific name)</h2>
+
+	<form>
+		<input type="text" id="ac2">
+	</form>
+	<p><span id="last_selected"></span></p>
+
+	<h2>Demo 3 (local data)</h2>
+
+	<form>
+		<input type="text" id="ac3">
+	</form>
+
+    <p style="height: 100px" class="spacer">&nbsp;</p>
+
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/08/2015 10:16:07" ReportInfo.Modified="09/08/2015 10:16:07" ReportInfo.CreatorVersion="2015.3.7.0">
+  <Dictionary>
+    <TableDataSource Name="Table" ReferenceName="Data.Table" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="Sn" DataType="System.String"/>
+      <Column Name="StorageNum" DataType="System.String"/>
+      <Column Name="StorageName" DataType="System.String"/>
+      <Column Name="LocalNum" DataType="System.String"/>
+      <Column Name="LocalName" DataType="System.String"/>
+      <Column Name="LocalType" DataType="System.Int32"/>
+      <Column Name="ProductNum" DataType="System.String"/>
+      <Column Name="BarCode" DataType="System.String"/>
+      <Column Name="ProductName" DataType="System.String"/>
+      <Column Name="BatchNum" DataType="System.String"/>
+      <Column Name="Num" DataType="System.Double"/>
+      <Column Name="CreateTime" DataType="System.DateTime"/>
+      <Column Name="CreateUser" DataType="System.String"/>
+      <Column Name="CreateName" DataType="System.String"/>
+      <Column Name="Remark" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="170.08">
+      <TextObject Name="Text1" Left="236.24" Top="56.7" Width="94.5" Height="18.9" Text="法国大份第三个范德萨"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Width="718.2" Height="170.08"/>
+    <DataBand Name="Data1" Width="718.2" Height="217.32"/>
+    <PageFooterBand Name="PageFooter1" Width="718.2" Height="170.08"/>
+  </ReportPage>
+</Report>

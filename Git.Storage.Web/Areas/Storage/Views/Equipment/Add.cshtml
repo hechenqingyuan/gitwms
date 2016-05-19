@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>设备编号</td>
+                <td>
+                    <input id="txtSnNum" name="txtSnNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Equipment.SnNum"></td>
+                <td>设备名</td>
+                <td>
+                    <input id="txtEquipmentName" name="txtEquipmentName" type="text" placeholder="请输入设备名" class="input-medium" value="@ViewBag.Equipment.EquipmentName"></td>
+            </tr>
+            <tr>
+                <td>授权符</td>
+                <td>
+                    <input id="txtFlag" name="txtFlag" type="text" placeholder="" disabled="disabled" class="input-medium" value="@ViewBag.Equipment.Flag"></td>
+                <td>授权</td>
+                <td>
+                    @{
+                        if (ViewBag.Equipment.IsImpower == 1)
+                        {
+                        <input type="checkbox" id="chbIsImpower" onclick="IsTrue(this)" name="chbIsImpower" checked="checked" />
+                        }
+                        else
+                        {
+                        <input type="checkbox" id="chbIsImpower" onclick="IsTrue(this)" name="chbIsImpower" />
+                        }
+                    }
+                </td>
+            </tr>
+            <tr>
+                 <td>状态</td>
+                <td >
+                   <select id="ddlStatus" name="ddlStatus" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Status)
+                    </select></td>
+                <td>备注</td>
+                <td >
+                    <input id="txtRemark" name="txtRemark" type="text" placeholder="" class="input-medium" value="@ViewBag.Equipment.Remark"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            IsTrue("#chbIsImpower");
+        });
+    </script>
+</body>
+
+</html>

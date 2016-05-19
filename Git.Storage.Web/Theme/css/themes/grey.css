@@ -1,0 +1,101 @@
+body { 
+  color: #222; 
+  background-color:#515255 !important;
+  background-image: url(../../img/bg-grey.png) !important;
+}
+
+#header.navbar-inverse .navbar-inner {
+  background-color: #3f4042;
+  background-image: -moz-linear-gradient(top, #3f4042, #4a4b4d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4a4b4d), to(#4a4b4d));
+  background-image: -webkit-linear-gradient(top, #3f4042, #4a4b4d);
+  background-image: -o-linear-gradient(top, #3f4042, #4a4b4d);
+  background-image: linear-gradient(to bottom, #3f4042, #4a4b4d);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3f4042', endColorstr='#ff4a4b4d', GradientType=0);
+  border-color: #333436;
+  webkit-box-shadow: 0 1px 10px rgba(55, 55, 55, .1);
+    -moz-box-shadow: 0 1px 10px rgba(55, 55, 55, .1);
+         box-shadow: 0 1px 10px rgba(55, 55, 55, .1);
+}
+
+#header .navbar-inner .nav .dropdown-toggle:hover, .navbar-inner .nav .dropdown.open .dropdown-toggle {
+  background-color: #333 !important;
+}
+
+#header.navbar-inverse .divider-vertical {
+  border-left-color: #3c3d3f;
+  border-right-color: #4e4f51;
+}
+
+#sidebar > ul > li > a {
+  border-top: 1px solid #58595d !important;
+  border-bottom: 1px solid #3e3f41 !important;
+  color: #eee !important;
+  text-shadow: 0 1px 1px #333 !important;
+}
+
+#sidebar > ul > li a i {
+   color: #999 !important;
+}
+
+#sidebar > ul > li >a:hover, #sidebar > ul > li:hover>a {
+  color: #fff !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+  background: #444447;
+  background: -webkit-linear-gradient(bottom, #444447, #525356);
+  background: -ms-linear-gradient(bottom, #444447, #525356); 
+  background: -moz-linear-gradient(bottom, #444447, #525356);
+  background: -o-linear-gradient(bottom, #444447, #525356);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444447', endColorstr='#ff525356', GradientType=0);
+  border-color: transparent;
+  border-top: 1px solid #525356;
+  border-bottom: 1px solid #444447;
+}
+
+#sidebar > ul > li.active > a{
+  background: #444447 !important;
+  border-top: 1px solid #525356;
+  border-bottom: 1px solid #444447;  
+}  
+
+#sidebar > ul > li > ul.sub > li > a {
+  color: #ccc;
+  text-shadow: 0 1px 1px #000;
+}
+
+#sidebar > ul > li > ul.sub > li.active > a, #sidebar > ul > li > ul.sub > li > a:hover {
+  color: #fff;
+  background: #7a7b7f !important;
+}
+
+#sidebar > ul > li > ul.sub > li > a:hover {
+  background: #7a7b7f !important;
+  color: #fff !important;
+}
+
+/* sub menu bg color on hover menu item */
+.sidebar-closed #sidebar > ul > li:hover .sub {
+  background-color: #515255;
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width:979px) { 
+  #sidebar {
+    background-color: #313235;
+     -webkit-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+             border-radius: 4px !important;
+  }
+
+  #sidebar > ul > li > a {
+    border-top: 1px solid #3a3b3f !important;
+    border-bottom: 1px solid #292a2c !important;
+  }
+
+  #sidebar > ul > li.active > a, #sidebar > ul > li:hover > a, #sidebar > ul > li > a:hover {
+    border-top: 1px solid #525356 !important;
+    border-bottom: 1px solid #2e2e2e !important;
+  }
+}

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap toggle buttons 2.8</title>
+    <meta name="author" content="Mattia Larentis">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css"
+          rel="stylesheet">
+    <link href="../static/stylesheets/bootstrap-toggle-buttons.css"
+          rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css"
+          rel="stylesheet">
+    <style>
+        .span4, h1 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h3, #magic-text {
+            margin-top: 20px;
+        }
+
+        #warning-toggle-button,
+        #danger-toggle-button,
+        #info-toggle-button,
+        #success-toggle-button,
+        #transition-percent-toggle-button,
+        #disabled-toggle-button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="padding-top: 50px;">
+<a href="https://github.com/nostalgiaz/bootstrap-toggle-buttons"><img
+        style="position: absolute; top: 0; right: 0; border: 0;"
+        src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+        alt="Fork me on GitHub"></a>
+
+<div class="container-fluid">
+<div class="row-fluid">
+    <div class="span12">
+        <h1>Bootstrap toggle buttons 2.8
+            <small>- by Mattia Larentis</small>
+        </h1>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Basic</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="normal-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="normal-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#normal-toggle-button').toggleButtons();
+</pre>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Callback</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="callback-toggle-button">
+            <input type="checkbox">
+        </div>
+        <p id="magic-text">Status is: false</p>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="callback-toggle-button">
+    &lt;input type="checkbox">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#callback-toggle-button').toggleButtons({
+    onChange: function ($el, status, e) {
+        console.log($el, status, e);
+        $('#magic-text').text("Status is: " + status);
+    }
+});
+</pre>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Text & Size</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="text-size-toggle-button">
+            <input type="checkbox">
+        </div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="text-toggle-button">
+    &lt;input type="checkbox">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#text-toggle-button').toggleButtons({
+    width: 220,
+    label: {
+        enabled: "Lorem Ipsum",
+        disabled: "Dolor Sit"
+    }
+});
+</pre>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Style</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="warning-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+
+        <div id="danger-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+
+        <div id="info-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+
+        <div id="success-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="danger-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#danger-toggle-button').toggleButtons({
+    style: {
+        // Accepted values ["primary", "danger", "info", "success", "warning"] or nothing
+        enabled: "danger",
+        disabled: "info"
+    }
+});
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Not Animated</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="not-animated-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+    </div>
+    <div class="span8">
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="not-animated-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#not-animated-toggle-button').toggleButtons({
+    animated: false
+});
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Transition Speed</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="transition-percent-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+
+        <div id="transition-value-toggle-button">
+            <input type="checkbox">
+        </div>
+        <br>
+
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="transition-percent-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div>
+
+&lt;div id="transition-value-toggle-button">
+    &lt;input type="checkbox">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#transition-percent-toggle-button').toggleButtons({
+    transitionspeed: "500%"
+});
+
+$('#transition-value-toggle-button').toggleButtons({
+    transitionspeed: 1  // default value: 0.05
+});
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Disabled</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span4">
+        <div id="disabled-toggle-button">
+            <input type="checkbox" checked="checked" disabled="">
+        </div>
+        <br>
+        <button id="toggle-disabled-toggle-button" class="btn btn-primary">
+            Toggle me!
+        </button>
+        <br>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="disabled-toggle-button">
+    &lt;input type="checkbox" checked="checked" disabled="">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#disabled-toggle-button').toggleButtons();
+$('#disabled-toggle-button').toggleButtons('toggleActivation');  // to toggle the disabled state
+</pre>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Label</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <label for="checkboxLabel">Toggle me!</label>
+
+        <div id="label-toggle-button">
+            <input id="checkboxLabel" type="checkbox" checked="checked">
+        </div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;label for="checkbox14">Toggle me!&lt;/label>
+&lt;div id="label-toggle-button">
+    &lt;input id="checkboxLabel" type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#label-toggle-button').toggleButtons();
+$('#label-toggle-button').toggleButtons('toggleState');  // to toggle the activation state
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Class</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <label for="checkboxOne">one</label>
+
+        <div class="toggle-button-class">
+            <input id="checkboxOne" type="checkbox" checked="checked">
+        </div>
+        <br>
+        <br>
+        <label for="checkboxTwo">two</label>
+
+        <div class="toggle-button-class">
+            <input id="checkboxTwo" type="checkbox" checked="checked">
+        </div>
+        <br>
+        <br>
+
+        <label for="checkboxThree">three</label>
+
+        <div class="toggle-button-class">
+            <input id="checkboxThree" type="checkbox" checked="checked"
+                   disabled="">
+        </div>
+        <br>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;label for="checkboxOne">one&lt;/label>
+&lt;div class="toggle-button-class">
+    &lt;input id="checkboxOne" type="checkbox" checked="checked">
+&lt;/div>
+
+&lt;label for="checkboxTwo">two&lt;/label>
+&lt;div class="toggle-button-class">
+    &lt;input id="checkboxTwo" type="checkbox" checked="checked">
+&lt;/div>
+
+&lt;label for="checkboxThree">three&lt;/label>
+&lt;div class="toggle-button-class">
+    &lt;input id="checkboxThree" type="checkbox" checked="checked" disabled="">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('.toggle-button-class').toggleButtons();
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Custom Colors</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <label for="checkboxMagenta">Magenta</label>
+
+        <div id="magenta-toggle-button">
+            <input id="checkboxMagenta" type="checkbox">
+        </div>
+        <br>
+        <br>
+        <label for="checkboxGradientMagenta">Gradient Magenta</label>
+
+        <div id="gradient-magenta-toggle-button">
+            <input id="checkboxGradientMagenta" type="checkbox" checked="checked">
+        </div>
+        <br>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;label for="checkboxMagenta">Magenta&lt;/label>
+&lt;div id="magenta-toggle-button">
+    &lt;input id="checkboxMagenta" type="checkbox">
+&lt;/div>
+
+&lt;label for="checkboxGradientMagenta">Gradient Magenta&lt;/label>
+&lt;div id="gradient-magenta-toggle-button">
+    &lt;input id="checkboxGradientMagenta" type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#magenta-toggle-button').toggleButtons({
+    style: {
+        custom: {
+            enabled: "#FF00FF",
+            enabledColor: "#FFFFFF",
+            disabled: "#FFAA00",
+            disabledColor: "#333333"
+        }
+    }
+});
+
+$('#gradient-magenta-toggle-button').toggleButtons({
+    style: {
+        custom: {
+            enabled: "#FF00FF",
+            enabledGradient: "#D300D3",
+            enabledColor: "#FFFFFF",
+            disabled: "#FFAA00",
+            disabledGradient: "#DD9900",
+            disabledColor: "#333333"
+        }
+    }
+});
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Height & Text-style</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="height-text-style-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="height-text-style-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#height-text-style-toggle-button').toggleButtons({
+    height: 100,
+    font: {
+        'line-height': '100px',
+        'font-size': '20px',
+        'font-style': 'italic'
+    }
+});
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Data Attributes</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="data-attribute-toggle-button"
+             data-toggleButton-width="170"
+             data-toggleButton-transitionspeed="500%"
+             data-toggleButton-style-custom-enabled-background="#FF0000"
+             data-toggleButton-style-custom-enabled-gradient="#000000">
+            <input type="checkbox" checked="checked">
+        </div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="data-attribute-toggle-button"
+     data-toggleButton-width="170"
+     data-toggleButton-transitionspeed="500%"
+     data-toggleButton-style-custom-enabled-background="#FF0000"
+     data-toggleButton-style-custom-enabled-gradient="#000000">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#data-attribute-toggle-button').toggleButtons();
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Toggle State</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="toggle-state-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+
+        <div id="toggle-state-toggle-button-on" class="btn btn-primary">ON!</div>
+        <div id="toggle-state-toggle-button-button" class="btn btn-primary">Toggle me!</div>
+        <div id="toggle-state-toggle-button-off" class="btn btn-primary">OFF!</div>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="toggle-state-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#toggle-state-toggle-button').toggleButtons();
+
+$('#toggle-state-toggle-button').toggleButtons('toggleState');  // to toggle the state of the toggle button
+$('#toggle-state-toggle-button').toggleButtons('setState', false); // true || false
+</pre>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <h3>Destroy</h3>
+        <hr>
+    </div>
+</div>
+<div class="row-fluid">
+
+    <div class="span4">
+        <div id="destroy-toggle-button">
+            <input type="checkbox" checked="checked">
+        </div>
+        <br>
+        <button id="btn-destroy-toggle-button" class="btn btn-danger">
+            Destroy me!
+        </button>
+    </div>
+    <div class="span8">
+
+        <h4>Html:</h4>
+<pre class="prettyprint linenums">
+&lt;div id="destroy-toggle-button">
+    &lt;input type="checkbox" checked="checked">
+&lt;/div></pre>
+        <h4>Js:</h4>
+<pre class="prettyprint linenums">
+$('#destroy-toggle-button').toggleButtons();
+
+$('#destroy-toggle-button').toggleButtons('destroy');
+</pre>
+    </div>
+</div>
+
+<p class="pull-right">
+    <a href="https://twitter.com/SpiritualGuru">follow me</a> -
+    <a href="http://www.larentis.eu">my site</a>
+</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
+<script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+<script src="../static/js/jquery.toggle.buttons.js"></script>
+<script>
+    window.prettyPrint && prettyPrint();
+
+    $('#normal-toggle-button').toggleButtons();
+
+    $('#callback-toggle-button').toggleButtons({
+        onChange: function ($el, status, e) {
+            console.log($el, status, e);
+            $('#magic-text').text("Status is: " + status);
+        }
+    });
+
+    $('#text-size-toggle-button').toggleButtons({
+        width: 220,
+        label: {
+            enabled: "Lorem Ipsum",
+            disabled: "Dolor Sit"
+        }
+    });
+
+    $('#warning-toggle-button').toggleButtons({
+        style: {
+            enabled: "warning",
+            disabled: "danger"
+        }
+    });
+
+
+    $('#danger-toggle-button').toggleButtons({
+        style: {
+            enabled: "danger",
+            disabled: "info"
+        }
+    });
+
+
+    $('#info-toggle-button').toggleButtons({
+        style: {
+            enabled: "info",
+            disabled: "success"
+        }
+    });
+
+
+    $('#success-toggle-button').toggleButtons({
+        style: {
+            enabled: "success",
+            disabled: "warning"
+        }
+    });
+
+    $('#not-animated-toggle-button').toggleButtons({
+        animated: false
+    });
+
+    $('#transition-percent-toggle-button').toggleButtons({
+        transitionspeed: "500%"
+    });
+
+    $('#transition-value-toggle-button').toggleButtons({
+        transitionspeed: 1
+    });
+
+    $('#disabled-toggle-button').toggleButtons();
+
+    $('#toggle-disabled-toggle-button').on('click', function () {
+        $(this).siblings().toggleButtons('toggleActivation');
+    });
+
+    $('#label-toggle-button').toggleButtons();
+
+    $('.toggle-button-class').toggleButtons();
+
+    $('#magenta-toggle-button').toggleButtons({
+        style: {
+            custom: {
+                enabled: {
+                    background: "#FF00FF"
+                },
+                disabled: {
+                    background:"#FFAA00",
+                    color: "#333333"
+                }
+            }
+        }
+    });
+
+    $('#gradient-magenta-toggle-button').toggleButtons({
+        style: {
+            custom: {
+                enabled:{
+                    background:"#FF00FF",
+                    gradient: "#D300D3",
+                    color: "#FFFFFF"
+                },
+                disabled: {
+                    background: "#FFAA00",
+                    gradient: "#DD9900",
+                    color: "#333333"
+                }
+            }
+        }
+    });
+
+    $('#height-text-style-toggle-button').toggleButtons({
+        height: 100,
+        font: {
+            'font-size': '20px',
+            'font-style': 'italic'
+        }
+    });
+
+    $('#data-attribute-toggle-button').toggleButtons();
+
+    $('#toggle-state-toggle-button').toggleButtons();
+
+    $('#toggle-state-toggle-button-button').on('click', function () {
+        $('#toggle-state-toggle-button').toggleButtons('toggleState');
+    });
+
+    $('#toggle-state-toggle-button-on').on('click', function () {
+        $('#toggle-state-toggle-button').toggleButtons('setState', true);
+    });
+
+    $('#toggle-state-toggle-button-off').on('click', function () {
+        $('#toggle-state-toggle-button').toggleButtons('setState', false);
+    });
+
+    $('#destroy-toggle-button').toggleButtons();
+
+    $('#btn-destroy-toggle-button').on('click', function () {
+        $('#destroy-toggle-button').toggleButtons('destroy');
+        $(this).remove();
+    });
+</script>
+
+</body>
+</html>

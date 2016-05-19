@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_customer">
+            <tr>
+                <td>地址编号</td>
+                <td>
+                    <input id="txtSnNum" name="txtSnNum" type="text" placeholder="自动生成,可不填" class="input-large" disabled="disabled" value="@ViewBag.CusAddress.SnNum"></td>
+            </tr>
+            <tr>
+                <td>地址</td>
+                <td>
+                    <input id="txtAddress" name="txtAddress" type="text" placeholder="" class="input-large" value="@ViewBag.CusAddress.Address"></td>
+            </tr>
+            <tr>
+                <td>联系人</td>
+                <td>
+                    <input id="txtContact" name="txtContact" type="text" placeholder="" class="input-large" value="@ViewBag.CusAddress.Contact"></td>
+            </tr>
+            <tr>
+                <td>电话</td>
+                <td>
+                    <input id="txtPhone" name="txtPhone" type="text" placeholder="" class="input-large" value="@ViewBag.CusAddress.Phone"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

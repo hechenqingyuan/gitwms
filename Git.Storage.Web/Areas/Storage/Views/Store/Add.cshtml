@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>仓库编号</td>
+                <td>
+                    <input id="txtStorateNum" name="txtStorateNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Storage.StorageNum"></td>
+                <td>仓库名</td>
+                <td>
+                    <input id="txtStorageName" name="txtStorageName" type="text" placeholder="请输入仓库名" class="input-medium" value="@ViewBag.Storage.StorageName"></td>
+            </tr>
+            <tr>
+                <td>仓库类型</td>
+                <td>
+                    <select id="ddlStorageType" name="ddlStorageType" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.StorageType)
+                    </select>
+                </td>
+                <td>是否为默认值</td>
+                <td>
+                    <select id="ddlIsDefault" name="ddlIsDefault" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.IsDefaultList)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td colspan="3">
+                    <input id="txtRemark" name="txtRemark" type="text" placeholder="" class="input-medium" value="@ViewBag.Storage.Remark">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

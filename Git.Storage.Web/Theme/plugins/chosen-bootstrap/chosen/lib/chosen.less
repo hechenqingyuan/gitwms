@@ -1,0 +1,419 @@
+/*
+*
+* Chosen for Bootstrap and Less
+*
+* Converted by @whitetruffle (http://www.twitter.com/whitetruffle)
+* from @joeylomanto's SASS fork (http://chosen-sass-bootstrap.herokuapp.com/)
+* Havest: @harvest
+*
+*/
+
+// Import the Bootstrap library, here or in your root LESS document
+// Update this path depending on your project structure
+// @import "../../bootstrap/less/bootstrap.less";
+
+
+// Base
+// ------------------------------------------
+
+.chzn-container {
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  .chzn-drop {
+    .border-radius(4px);
+    .box-shadow(0 4px 5px rgba(0, 0, 0, 0.15));
+    background: #fff;
+    border: 1px solid #CCC;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    z-index: 1010;
+    margin: 4px 0 0;
+  }
+}
+
+
+// Chosen Single
+// ------------------------------------------
+
+.chzn-container-single {
+  .chzn-single {
+    .border-radius(3px);
+    .box-shadow(0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1));
+    .background-clip(padding-box);
+    #gradient > .vertical-three-colors(#ffffff, #f6f6f6, 50%, #f4f4f4);
+    -moz-background-clip: padding;
+    background-color: #ffffff; 
+    border: 1px solid #CCC;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 28px;
+    line-height: 29px;
+    padding: 0 0 0 8px;
+    color: @gray;
+    text-decoration: none;
+    span {
+      .text-overflow();
+      margin-right: 26px;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    abbr {
+      display: block;
+      position: absolute;
+      right: 26px;
+      top: 8px;
+      width: 12px;
+      height: 13px;
+      font-size: 1px;
+      background: url("/images/chosen-sprite.png") right top no-repeat;
+      &:hover {
+        background-position: right -11px;
+      }
+    }
+    div {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      height: 100%;
+      width: 18px;
+      b {
+        background: url("/images/chosen-sprite.png") no-repeat 0 2px;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .chzn-search {
+    padding: 3px 4px;
+    position: relative;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 1010;
+    input {
+      margin: 1px 0;
+      padding: 4px 20px 4px 5px;
+      outline: 0;
+    }
+  }
+  .chzn-default {
+    color: #999;
+  }
+  .chzn-drop {
+    .border-radius(3px);
+    .background-clip(padding-box);
+    -moz-background-clip   : padding;
+  }
+  &.chzn-disabled {
+    .chzn-single abbr:hover {
+      background-position: right top;
+    }
+  }
+}
+
+.chzn-container-single-nosearch {
+  .chzn-search { 
+    input {
+      position: absolute;
+      left: -9000px;
+    }
+  }
+}
+
+
+// Chosen Multi
+// ------------------------------------------
+
+.chzn-container-multi {
+  .chzn-choices {
+    .border-radius(@inputBorderRadius);
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+    .transition(border linear .2s);
+    .transition(box-shadow linear .2s);
+    background-color: @inputBackground !important;
+    border: 1px solid @inputBorder;
+    cursor: text;
+    overflow: hidden;
+    height: auto !important;
+    height: 1%;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    color: @gray;
+    li {
+      float: left;
+      list-style: none;
+    }
+    .search-field {
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+      input {
+        .box-shadow(none);
+        color: @gray;
+        background: transparent !important;
+        border: 0 !important;
+        font-family: sans-serif;
+        font-size: 100%;
+        height: 15px;
+        padding: 5px;
+        margin: 1px 0 2px;
+        outline: 0;
+      }
+      .default {
+        color: #999;
+      }
+    }
+    .search-choice {
+      .border-radius(3px);
+      .box-shadow(0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05));
+      #gradient > .vertical-three-colors(#ffffff, #f6f6f6, 50%, #f4f4f4);
+      .background-clip(padding-box);
+      -moz-background-clip: padding;
+      color: @gray;
+      border: 1px solid @grayLight;
+      line-height: 13px;
+      padding: 3px 20px 3px 5px;
+      margin: 3px 0 3px 5px;
+      position: relative;
+      cursor: default;
+      .search-choice-close {
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        width: 12px;
+        height: 13px;
+        font-size: 1px;
+        background: url("/images/chosen-sprite.png") right top no-repeat;
+        &:hover {
+          background-position: right -11px;
+        }
+      }
+    }
+    .search-choice.search-choice-disabled {
+      #gradient > .vertical-three-colors(#f4f4f4, #f0f0f0, 50%, #e8e8e8);
+      color: #666;
+      border: 1px solid #cccccc;
+      padding-right: 5px;
+    }
+    .search-choice-focus {
+      background: #d4d4d4;
+      .search-choice-close {
+        background-position: right -11px;
+      }
+    }
+  }
+}
+
+
+// Chosen Container
+// ------------------------------------------
+
+.chzn-container {
+  .chzn-results {
+    margin: 0 4px 4px 0;
+    max-height: 240px;
+    padding: 0 0 0 4px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    li {
+      display: none;
+      line-height: 15px;
+      padding: 5px 6px;
+      margin: 0;
+      list-style: none;
+      em {
+        background: #feffde;
+        font-style: normal;
+      }
+    }
+    .no-results {
+      background: #f4f4f4;
+      display: list-item;
+    }
+    .group-result {
+      cursor: default;
+      color: #999;
+      font-weight: bold;
+    }
+    .group-option {
+      padding-left: 15px;
+    }
+    .active-result {
+      cursor: pointer;
+      display: list-item;
+    }
+    .highlighted {
+      #gradient > .vertical(#3875d7, #2a62bc);
+      color: #fff;
+      em {
+        background: transparent;
+      }
+    }
+  }
+  .chzn-results-scroll {
+    background: white;
+    margin: 0 4px;
+    position: absolute;
+    text-align: center;
+    width: 321px; /* This should by dynamic with js */
+    z-index: 1;
+    span {
+      display: inline-block;
+      height: 17px;
+      text-indent: -5000px;
+      width: 9px;
+    }
+  }
+  .chzn-results-scroll-down {
+    bottom: 0;
+    span {
+      background: url("/images/chosen-sprite.png") no-repeat -4px -3px;
+    }
+  }
+  .chzn-results-scroll-up {
+    span {
+      background: url("/images/chosen-sprite.png") no-repeat -22px -3px;
+    }
+  }
+}
+
+.chzn-container-multi {
+  .chzn-results {
+    margin: 4px;
+    padding: 0;
+  }
+  .chzn-drop {
+    .result-selected {
+      display: none;
+    }
+  }
+}
+
+.chzn-container-active {
+  .chzn-single {
+    border: 1px solid #CCC;
+    .chzn-drop {
+      margin-top: -29px;
+    }
+  }
+  .chzn-single-with-drop {
+    .box-shadow(none);
+    border-color: #CCC;
+    div {
+      background: transparent;
+      border-left: none;
+      b {
+        background-position: -18px 1px;
+      }
+    }
+  }
+  .chzn-choices {
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6));
+    border: 1px solid rgba(82,168,236,.8);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    .search-field {
+      input {
+        color: #111 !important;
+      }
+    }
+  }
+}
+
+
+// Chosen Disabled
+// ------------------------------------------
+
+.chzn-disabled {
+  .opacity(0.5);
+  cursor: default;
+  .chzn-single {
+    cursor: default;
+  }
+  .search-choice-close {
+    cursor: default;
+  }
+}
+
+
+// Chosen RTL (Right to Left)
+// ------------------------------------------
+
+.chzn-rtl {
+  text-align: right;
+  .chzn-single {
+    padding: 0 8px 0 0;
+    overflow: visible;
+    span {
+      margin-left: 26px;
+      margin-right: 0;
+      direction: rtl;
+    }
+    div {
+      left: 3px;
+      right: auto;
+    }
+    abbr {
+      left: 26px;
+      right: auto;
+    }
+  }
+  .chzn-choices {
+    li {
+      float: right;
+    }
+    .search-field {
+      input {
+        direction: rtl;
+      }
+    }
+    .search-choice {
+      padding: 3px 5px 3px 19px;
+      margin: 3px 5px 3px 0;
+      .search-choice-close {
+        left: 4px;
+        right: auto;
+        background-position: right top;
+      }
+    }
+  }
+  .chzn-results {
+    .group-option {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+  .chzn-search {
+    input {
+      padding: 4px 5px 4px 20px;
+      direction: rtl;
+    }
+  }
+  &.chzn-container-single {
+    .chzn-results {
+      margin: 0 0 4px 4px;
+      padding: 0 4px 0 0;
+    }
+  }
+  &.chzn-container-active {
+    .chzn-single-with-drop {
+      div {
+        border-right: none;
+      }
+    }
+  }
+}

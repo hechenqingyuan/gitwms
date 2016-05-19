@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>库位编号</td>
+                <td>
+                    <input id="txtLocalNum" name="txtLocalNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Location.LocalNum"></td>
+                <td>库位名称</td>
+                <td>
+                    <input id="txtLocalName" name="txtLocalName" type="text" placeholder="请输入库位名" class="input-medium" value="@ViewBag.Location.LocalName"></td>
+            </tr>
+            <tr>
+                <td>库位条码</td>
+                <td>
+                    <input id="txtLocalBarCode" name="txtLocalBarCode" type="text"  class="input-medium"  value="@ViewBag.Location.LocalBarCode"></td>
+                <td>库位类型</td>
+                <td>
+                    <select id="ddlLocalType" name="ddlLocalType" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.LocalTypeList)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>仓库</td>
+                <td>
+                    <select id="ddlStorage" name="ddlStorage" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Storage)
+                    </select>
+                </td>
+                <td>是否默认</td>
+                <td>
+                    <select id="ddlIsDefault" name="ddlIsDefault" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.IsDefault)
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

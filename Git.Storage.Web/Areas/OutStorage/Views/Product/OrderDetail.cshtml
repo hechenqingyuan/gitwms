@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <div class="sTableOptions">
+            <div class="row-fluid" style="border: 1px solid #DDDDDD;">
+                订单号&nbsp;<input id="txtOrderNum" name="txtOrderNum" type="text" title="双击下拉选择" class="searchinfo" />&nbsp;&nbsp;
+                提示：回车加载产品与库位信息!
+            </div>
+        </div>
+        <table class="table table-striped table-hover table-bordered dataTable inorder_detail" id="tabInfo2">
+            <thead>
+                <tr>
+                    <th style="width: 8px;"><input type="checkbox" class="group-checkable" onclick="orderProduct.SelectAllOrder(this)" /></th>
+                    <th class="hidden-480">产品名称</th>
+                    <th class="hidden-480">产品条码</th>
+                    <th class="hidden-480">现有库存</th>
+                    <th class="hidden-480">订单数</th>
+                    <th class="hidden-480">已发数</th>
+                    <th class="hidden-480">出库数</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+

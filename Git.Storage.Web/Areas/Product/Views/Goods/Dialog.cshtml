@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="fixed-top">
+    <div class="row-fluid" style="border: 1px solid #DDDDDD;">
+        类别编号/名称:<input id="txtProduct" name="txtProduct" type="text" class="searchinfo" />&nbsp;&nbsp;
+        类别&nbsp;<select id="ddlCategory" name="ddlCategory" class="searchselect">@Html.Raw(ViewBag.Category)</select>
+        <a id="gritter-remove-all" class="btn btn-info" href="javascript:void(0)" onclick="Product_Common.PageClick(1)">搜索</a>
+    </div>
+    <table class="table table-striped table-bordered table-hover" id="dialog_tabInfo" style="margin-bottom: 0px;">
+        <thead>
+            <tr class="widget-title">
+                <th style="width: 8px;"><input type="checkbox" class="group-checkable" onclick="Product_Common.SelectAll(this)"/></th>
+                <th class="hidden-480">产品编号</th>
+                <th class="hidden-480">产品名称</th>
+                <th class="hidden-480">类别</th>
+                <th class="hidden-480">单位</th>
+                <th class="hidden-480">单价</th>
+                <th class="hidden-480">规格</th>
+                <th class="hidden-480">描述</th>
+                <th class="hidden-480">备注</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="dialog_mypager" class="row-fluid">
+    </div>
+    <script type="text/ecmascript">
+        var Product_Common = {
+            PageClick: function (pageIndex, pageSize) {
+                pageSize = pageSize == undefined ? 7 : pageSize;
+                var ProductName = $("#txtProduct").val();
+                var CateNum = $("#ddlCategory").val();
+                var param = {};
+                param["PageIndex"] = pageIndex;
+                param["PageSize"] = pageSize;
+                param["ProductName"] = ProductName;
+                param["CateNum"] = CateNum;
+                $.gitAjax({
+                    url: "/Product/GoodsAjax/GetList",
+                    data: param,
+                    type: "post",
+                    dataType: "json",
+                    success: function (result) {
+                        var json = result;
+                        var Html = "";
+                        if (json.Data != undefined && json.Data.List != undefined && json.Data.List.length > 0) {
+                            $(json.Data.List).each(function (i, item) {
+                                Html += "<tr>";
+                                Html += "<td><input type=\"checkbox\" name=\"product_item\" class=\"checkboxes\" data-value=\"" + escape(JSON.stringify(item)) + "\" value=\"" + item.SnNum + "\"/></td>";
+                                Html += "<td>" + item.BarCode + "</td>";
+                                Html += "<td>" + git.GetStrSub(item.ProductName, 14) + "</td>";
+                                Html += "<td>" + item.UnitName + "</td>";
+                                Html += "<td>" + item.CateName + "</td>";
+                                Html += "<td>" + git.ToDecimal(item.AvgPrice, 2) + "&nbsp;元</td>";
+                                Html += "<td>" + item.Size + "</td>";
+                                Html += "<td>" + git.GetStrSub(item.Description, 14) + "</td>";
+                                Html += "<td>" + git.GetStrSub(item.Remark, 14) + "</td>";
+                                Html += "</tr>";
+                            });
+                        }
+                        $("#dialog_tabInfo tbody").html(Html);
+                        $("#dialog_mypager").minpager({ pagenumber: pageIndex, recordCount: json.RowCount, pageSize: pageSize, buttonClickCallback: Product_Common.PageClick });
+                        $("#dialog_tabInfo").find("input[type='checkbox']").attr("checked", false);
+                    }
+                });
+            },
+            SelectAll: function (item) {
+                var flag = $(item).attr("checked");
+                if (flag) {
+                    $("#dialog_tabInfo tbody").find("input[name='product_item']").attr("checked",true);
+                } else {
+                    $("#dialog_tabInfo tbody").find("input[name='product_item']").attr("checked", false);
+                }
+            }
+        }
+        Product_Common.PageClick(1, 7);
+    </script>
+</body>
+</html>

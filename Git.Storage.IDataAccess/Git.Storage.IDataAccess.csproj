@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5E5D75F-7A39-4E34-A9AA-519901B89114}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Git.Storage.IDataAccess</RootNamespace>
+    <AssemblyName>Git.Storage.IDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Git.Framework.ORM">
+      <HintPath>..\Lib\Git.Framework.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bad\IBadReport.cs" />
+    <Compile Include="Bad\IBadReportDetail.cs" />
+    <Compile Include="Bad\IProc_AuditeBadReport.cs" />
+    <Compile Include="Bad\IProc_BadTOP10Num.cs" />
+    <Compile Include="Base\IAdmin.cs" />
+    <Compile Include="Base\IMeasure.cs" />
+    <Compile Include="Base\IMeasureRel.cs" />
+    <Compile Include="Base\ISequence.cs" />
+    <Compile Include="Base\ISysDepart.cs" />
+    <Compile Include="Base\ISysRelation.cs" />
+    <Compile Include="Base\ISysResource.cs" />
+    <Compile Include="Base\ISysRole.cs" />
+    <Compile Include="Base\ITNum.cs" />
+    <Compile Include="Base\IVnArea.cs" />
+    <Compile Include="Base\IVnCity.cs" />
+    <Compile Include="Base\IVnProvince.cs" />
+    <Compile Include="Check\ICheckData.cs" />
+    <Compile Include="Check\ICheckStock.cs" />
+    <Compile Include="Check\ICheckStockInfo.cs" />
+    <Compile Include="Check\ICloneHistory.cs" />
+    <Compile Include="Check\ICloneTemp.cs" />
+    <Compile Include="Check\IProc_AuditeCheck.cs" />
+    <Compile Include="Check\IProc_CreateCheck.cs" />
+    <Compile Include="InStorage\IInStorage.cs" />
+    <Compile Include="InStorage\IInStorDetail.cs" />
+    <Compile Include="InStorage\IInStorSingle.cs" />
+    <Compile Include="InStorage\IProc_AuditeInStorage.cs" />
+    <Compile Include="InStorage\IProc_InStorageReport.cs" />
+    <Compile Include="Move\IMoveOrder.cs" />
+    <Compile Include="Move\IMoveOrderDetail.cs" />
+    <Compile Include="Move\IProc_AuditeMove.cs" />
+    <Compile Include="Order\IOrderDetail.cs" />
+    <Compile Include="Order\IOrders.cs" />
+    <Compile Include="OutStorage\IOutStoDetail.cs" />
+    <Compile Include="OutStorage\IOutStorage.cs" />
+    <Compile Include="OutStorage\IOutStorSingle.cs" />
+    <Compile Include="OutStorage\IProc_AuditeOutStorage.cs" />
+    <Compile Include="OutStorage\IProc_OutStorageReport.cs" />
+    <Compile Include="Procedure\IProc_SwiftNum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\IReportParams.cs" />
+    <Compile Include="Report\IReports.cs" />
+    <Compile Include="Return\IProc_AuditeReturn.cs" />
+    <Compile Include="Return\IProc_ReturnTOP10Num.cs" />
+    <Compile Include="Return\IReturnDetail.cs" />
+    <Compile Include="Return\IReturnOrder.cs" />
+    <Compile Include="Store\ICusAddress.cs" />
+    <Compile Include="Store\ICustomer.cs" />
+    <Compile Include="Store\IEquipment.cs" />
+    <Compile Include="Store\IInventoryBook.cs" />
+    <Compile Include="Store\ILocalProduct.cs" />
+    <Compile Include="Store\ILocation.cs" />
+    <Compile Include="Store\IProc_ProductReport.cs" />
+    <Compile Include="Store\IProduct.cs" />
+    <Compile Include="Store\IProductCategory.cs" />
+    <Compile Include="Store\IStorage.cs" />
+    <Compile Include="Store\ISupplier.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Storage.Entity\Git.Storage.Entity.csproj">
+      <Project>{62f1847e-3906-43da-a80f-9977fb31f5ea}</Project>
+      <Name>Git.Storage.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,70 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_customer">
+            <tr>
+                <td>编号</td>
+                <td>
+                    <input id="txtCusNum" name="txtCusNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Customer.CusNum"></td>
+                <td>名称</td>
+                <td><input id="txtCusName" name="txtCusName" type="text" placeholder="请输入客户名称" class="input-medium" value="@ViewBag.Customer.CusName"></td>
+                <td>备注</td>
+                <td >
+                    <input id="txtRemark" name="txtRemark" type="text" placeholder="" class="input-medium" value="@ViewBag.Customer.Remark">
+                </td>
+            </tr>
+            <tr>
+                <td>传真</td>
+                <td>
+                    <input id="txtFax" name="txtFax" type="text" placeholder="" class="input-medium" value="@ViewBag.Customer.Fax"></td>
+                <td>Email</td>
+                <td>
+                    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-medium" value="@ViewBag.Customer.Email"></td>
+                <td>电话</td>
+                <td>
+                    <input id="txtPhone" name="txtPhone" type="text" placeholder="" class="input-medium" value="@ViewBag.Customer.Phone"></td>
+            </tr>
+            <tr style="display:none;">
+               <td>类型</td>
+                <td>
+                    <select id="ddlCusType" name="ddlCusType" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.DdlCusType)
+                    </select>&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+
+        <table class="table table-striped table-bordered table-hover" id="tempCusAddress">
+            <thead>
+                <tr>
+                    <td class="customer_td"><strong>地址编号</strong></td>
+                    <td class="customer_add"><strong>地址</strong></td>
+                    <td class="customer_td"><strong>联系人</strong></td>
+                    <td class="customer_td"><strong>电话</strong></td>
+                    <td class="customer_td"><strong>操作</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

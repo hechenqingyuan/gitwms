@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7061BE81-6A7B-4773-8BEF-FAD51A88D522}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Git.Storage.Common</RootNamespace>
+    <AssemblyName>Git.Storage.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\Lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.DataTypes">
+      <HintPath>..\Lib\Git.Framework.DataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Json">
+      <HintPath>..\Lib\Git.Framework.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\Lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\Lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\Lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EAudite.cs" />
+    <Compile Include="EBadType.cs" />
+    <Compile Include="EBool.cs" />
+    <Compile Include="EChange.cs" />
+    <Compile Include="ECheckType.cs" />
+    <Compile Include="ECusType.cs" />
+    <Compile Include="EDataSourceType.cs" />
+    <Compile Include="EElementType.cs" />
+    <Compile Include="EEquipmentStatus.cs" />
+    <Compile Include="EInType.cs" />
+    <Compile Include="EIsDelete.cs" />
+    <Compile Include="ELocalType.cs" />
+    <Compile Include="EMoveType.cs" />
+    <Compile Include="EnumJson\EnumToJsonHelper.cs" />
+    <Compile Include="EOpType.cs" />
+    <Compile Include="EOrder.cs" />
+    <Compile Include="EOrderStatus.cs" />
+    <Compile Include="EOrderType.cs" />
+    <Compile Include="EOutType.cs" />
+    <Compile Include="EProductType.cs" />
+    <Compile Include="EReportType.cs" />
+    <Compile Include="EResourceType.cs" />
+    <Compile Include="EReturnStatus.cs" />
+    <Compile Include="EReturnType.cs" />
+    <Compile Include="ESequence.cs" />
+    <Compile Include="EStorageType.cs" />
+    <Compile Include="ESupType.cs" />
+    <Compile Include="EUnit.cs" />
+    <Compile Include="ExcelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Excel\AsposeExcel.cs" />
+    <Compile Include="Excel\NPOIExcel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>条码仓库管理系统</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="条码仓库管理系统 " name="description" />
+    <meta content="条码仓库管理系统 " name="author" />
+    @*<link href="/Theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Theme/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/Theme/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Theme/css/style.css" rel="stylesheet" />
+    <link href="/Theme/css/themes/default.css" rel="stylesheet" id="style_color" />
+    <link href="/Theme/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="/Theme/css/pages/login.css" rel="stylesheet" type="text/css" />*@
+    <link href="/Theme/plugins/jbox-v2.3/jBox/Skins/Purple/jbox.css" rel="stylesheet" />
+    <link href="/Theme/css/console.css" rel="stylesheet" />
+    <link href="/Theme/css/home.css" rel="stylesheet" />
+    <style type="text/css">
+        .logo { width: 100%; text-align: center; height:35px; font-size:30px; margin-top:30px; color:#2A8FCD; font-weight:bold; }
+        #home { margin:auto; position:initial;  }
+        .wrapper .item { margin-top:10px; padding-left:25px;}
+        .item .btn-primary { width:228px; }
+    </style>
+</head>
+@*<body>
+    <div class="container">
+        <div class="home">
+            <div class="logo">云仓库</div>
+            <div class="wrapper">
+                <div class="item">
+                    <input type="text" name="user" value="" placeholder="用户名">
+                </div>
+                <div class="item">
+                    <input type="password" name="passwd" value="" placeholder="密码">
+                </div>
+                <div class="item">
+                    <input class="btn btn-primary" type="submit" value="登录">
+                </div>
+            </div>
+            <div class="footer"><a>2014 © 条码仓库管理系统   V1.0.5293</a></div>
+        </div>
+    </div>
+
+
+    <input type="hidden" id="hdUrl" value="@ViewBag.ReferrerUrl" />
+    <script src="/Theme/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/Theme/plugins/jbox-v2.3/jBox/jquery.jBox-2.3.min.js"></script>
+    <script src="/Theme/customer/Git.Framework.Common.js?t=@Guid.NewGuid().ToString()"></script>
+    <script src="/Theme/customer/Git.Framework.Login.js?t=@Guid.NewGuid().ToString()"></script>
+</body>*@
+
+
+<body class="modal-ready">
+    <div class="logo">吉特仓储系统</div>
+    <div class="container">
+        <div id="home">
+            <div class="wrapper">
+                <form action="">
+                    <fieldset>
+                        <legend></legend>
+                        <div class="item user">
+                            <input type="text" id="input-username" name="input-username" value="administrator" placeholder="用户名"/>
+                        </div>
+                        <div class="item password">
+                            <input type="password" id="input-password" name="input-password" value="adminjooshow" placeholder="密码"/>
+                        </div>
+                        <div class="item">
+                            <input id="login-btn" class="btn btn-primary" type="button" value="登录" onclick="User.Login()"/>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="footer"><a>技术支持QQ群:142050808</a></div>
+        </div>
+    </div>
+    <input type="hidden" id="hdUrl" value="@ViewBag.ReferrerUrl" />
+    <script src="/Theme/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/Theme/plugins/jbox-v2.3/jBox/jquery.jBox-2.3.min.js"></script>
+    <script src="/Theme/customer/Git.Framework.Common.js?t=@Guid.NewGuid().ToString()"></script>
+    <script src="/Theme/customer/Git.Framework.Login.js?t=@Guid.NewGuid().ToString()"></script>
+</body>
+</html>

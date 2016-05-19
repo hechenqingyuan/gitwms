@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="dialogtab">
+            <tr>
+                <td>参数名</td>
+                <td>
+                    <input id="txtParamName" name="txtParamName" type="text" placeholder="输入带@前缀的参数" class="input-large" value="" style="width:210px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>显示名</td>
+                <td><input id="txtShowName" name="txtShowName" type="text" placeholder="" class="input-large" value="" /></td>
+            </tr>
+            <tr>
+                <td>数据类型</td>
+                <td>
+                    <select id="ddlParamType" name="ddlParamType" class="span3">
+                        @Html.Raw(ViewBag.DataTypeList)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>可选值</td>
+                <td><input id="txtParamData" name="txtParamData" type="text" placeholder="" class="input-large" value="" /></td>
+            </tr>
+            <tr>
+                <td>默认值</td>
+                <td>
+                    <input id="txtDefaultValue" name="txtDefaultValue" type="text" placeholder="" class="input-large" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>显示元素</td>
+                <td>
+                    <select id="ddlParamElement" name="ddlParamElement" class="span3">
+                        @Html.Raw(ViewBag.ElementTypeList)
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
+

@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>用户编号</td>
+                <td>
+                    <input id="txtUserCode" name="txtUserCode" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Admin.UserCode"/></td>
+                <td>用户名</td>
+                <td>
+                    <input id="txtUserName" name="txtUserName" type="text" placeholder="请输入用户名" class="input-medium" value="@ViewBag.Admin.UserName"/></td>
+            </tr>
+            @{if (string.IsNullOrEmpty(ViewBag.Admin.UserCode) || ViewBag.Admin.RoleName == "管理员")
+              {
+                <tr>
+                    <td>密码</td>
+                    <td>
+                        <input id="txtPassword" name="txtPassword" type="password" placeholder="请输入密码" class="input-medium"  value="@ViewBag.Admin.PassWord"/></td>
+                    <td>确认密码</td>
+                    <td>
+                        <input id="txtConfirm" name="txtConfirm" type="password" placeholder="请输入确认密码" class="input-medium"  value="@ViewBag.Admin.PassWord"/></td>
+                </tr>
+              }
+              else
+              {
+                <tr style="display:none;">
+                    <td>密码</td>
+                    <td>
+                        <input id="txtPassword" name="txtPassword" type="hidden"  value="@ViewBag.Admin.PassWord"/>
+                    </td>
+                    <td>
+                        <input id="txtConfirm" name="txtConfirm" type="hidden"   value="@ViewBag.Admin.PassWord"/>
+                    </td>
+                </tr>
+              }
+            }
+            <tr>
+                <td>真名</td>
+                <td>
+                    <input id="txtRealName" name="txtRealName" type="text" placeholder="" class="input-medium" value="@ViewBag.Admin.RealName"/></td>
+                <td>Email</td>
+                <td>
+                    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-medium" value="@ViewBag.Admin.Email"/></td>
+            </tr>
+            <tr>
+                <td>电话</td>
+                <td>
+                    <input id="txtPhone" name="txtPhone" type="text" placeholder="" class="input-medium" value="@ViewBag.Admin.Phone"/></td>
+                <td>手机</td>
+                <td>
+                    <input id="txtMobile" name="txtMobile" type="text" placeholder="" class="input-medium" value="@ViewBag.Admin.Mobile"/></td>
+            </tr>
+            <tr>
+                <td>部门</td>
+                <td>
+                    <select id="ddlDepart" name="ddlDepart" class="input-medium" style="width:164px;">
+                        @Html.Raw(ViewBag.DepartList)
+                    </select>
+                </td>
+                <td>角色</td>
+                <td>
+                    <select id="ddlRole" name="ddlRole" class="input-medium" style="width:164px;">
+                        @Html.Raw(ViewBag.RoleList)
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>产品编号</td>
+                <td>
+                    <input id="txtSnNum" name="txtSnNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Goods.SnNum"></td>
+                <td>产品条码</td>
+                <td>
+                    <input id="txtBarCode" name="txtBarCode" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.BarCode"></td>
+            </tr>
+            <tr>
+                <td>产品名称</td>
+                <td>
+                    <input id="txtProductName" name="txtProductName" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.ProductName"></td>
+                <td>产品类别</td>
+                <td>
+                    <select id="ddlCategory" name="ddlCategory" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Category)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>预警下限</td>
+                <td>
+                    <input id="txtMinNum" name="txtMinNum" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.MinNum"/></td>
+                <td>预警上限</td>
+                <td>
+                    <input id="txtMaxNum" name="txtMaxNum" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.MaxNum"/></td>
+            </tr>
+            <tr>
+                <td>规格</td>
+                <td>
+                    <input id="txtSize" name="txtSize" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.Size"/></td>
+               
+                <td>单位</td>
+                <td>
+                    <select id="ddlUnit" name="ddlUnit" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Unit)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>价格</td>
+                <td><input id="txtAvgPrice" name="txtAvgPrice" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.AvgPrice"/></td>
+                <td>客户</td>
+                <td>
+                    <select id="ddlCustomer" name="ddlCustomer" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Customer)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>默认仓库</td>
+                <td>
+                    <select id="ddlStorage" name="ddlStorage" class="input-medium" onchange="Product.DdlChange('@ViewBag.Goods.DefaultLocal')" style="width:165px;">
+                        @Html.Raw(ViewBag.Storage)
+                    </select>
+                    <input id="hiddent" name="hiddent" type="hidden"  class="input-medium" value="@ViewBag.Goods.DefaultLocal">
+                </td>
+                <td>默认库位</td>
+                <td>
+                    <select id="ddlLocal" name="ddlLocal" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.Local)
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>描述</td>
+                <td colspan="3">
+                    <input id="txtDescripte" name="txtDescripte" type="text" placeholder="" class="input-medium" value="@ViewBag.Goods.Description"/>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var hiddent = $("#hiddent").val();
+            Product.DdlChange(hiddent);
+        });
+    </script>
+</body>
+</html>

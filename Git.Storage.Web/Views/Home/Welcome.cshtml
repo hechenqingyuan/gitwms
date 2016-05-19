@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="fixed-top">
+    @Html.Partial("_Top")
+    <div id="container" class="row-fluid @ViewBag.MenuStatus">
+        @Html.Partial("_LeftMenu")
+        <div id="body">
+            <div id="widget-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button"></button>
+                    <h3>widget Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here will be a configuration form</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        @Html.Raw(ViewBag.NavMenu)
+                    </div>
+                </div>
+                <div class="row-fluid" style="text-align:center;">
+                    <br /><br /><br /><br /><br />
+                    <h1>欢迎使用吉特仓库管理系统</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_Foot")
+    
+</body>
+
+</html>

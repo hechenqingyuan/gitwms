@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="dialogtab inorder_tab">
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle inorder_topline"><strong>退货单号</strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.Entity.OrderNum</td>
+                <td class="inorder_tdTitle inorder_topline"><strong>退货类型</strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.ReturnType</td>
+                <td class="inorder_tdTitle inorder_topline"><strong>状态</strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.Status</td>
+            </tr>
+
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>客户编号</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.CusNum</td>
+                <td class="inorder_tdTitle"><strong>客户名称</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.CusName</td>
+                <td class="inorder_tdTitle"><strong>联系人</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.Contact</td>
+            </tr>
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>关联订单号</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.ContractOrder</td>
+                <td class="inorder_tdTitle"><strong>创建人</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.CreateUser</td>
+                <td class="inorder_tdTitle"><strong>创建时间</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.CreateTime</td>
+            </tr>
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>电话</strong></td>
+                <td class="inorder_tdContent">@ViewBag.Entity.Phone</td>
+                <td class="inorder_tdTitle"><strong>地址</strong></td>
+                <td colspan="3" class="inorder_tdContent">@ViewBag.Entity.Address</td>
+            </tr>
+             <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>审核意见</strong></td>
+                <td class="inorder_tdContent" colspan="5">
+                    @if (ViewBag.Flag == "1")
+                    { 
+                        @ViewBag.Entity.Reason
+                    }
+                    else 
+                    {
+                        <textarea id="txtReason"></textarea>
+                    }
+                </td>
+            </tr>
+        </table>
+        <table class="table table-striped table-bordered table-hover inorder_detail" id="tabInfo">
+            <thead>
+                <tr class="widget-title">
+                    <th class="hidden-480">产品名称</th>
+                    <th class="hidden-480">产品条码</th>
+                    <th class="hidden-480">产品编号</th>
+                    <th class="hidden-480">批次</th>
+                    <th class="hidden-480">库位</th>
+                    <th class="hidden-480">订单数</th>
+                    <th class="hidden-480">退货数</th>
+                    <th class="hidden-480">退货总价</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Git.Storage.Entity.Return.ReturnDetailEntity entity in ViewBag.Detail)
+                { 
+                    <tr data-ProductNum="@entity.ProductNum">
+                        <td>@entity.ProductName</td>
+                        <td>@entity.BarCode</td>
+                        <td>@entity.ProductNum</td>
+                        <td>@entity.BatchNum</td>
+                        <td>@entity.LocalNum</td>
+                        <td>@entity.Num</td>
+                        <td>@entity.BackNum</td>
+                        <td>@entity.BackAmount.ToString("0.00")&nbsp;元</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

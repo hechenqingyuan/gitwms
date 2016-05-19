@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>供应商编号</td>
+                <td>
+                    <input id="txtSupNum" name="txtSupNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.Supplier.SupNum"></td>
+                <td>供应商名称</td>
+                <td>
+                    <input id="txtSupName" name="txtSupName" type="text" placeholder="请输入供应商名称" class="input-medium" value="@ViewBag.Supplier.SupName"></td>
+            </tr>
+            <tr>
+                <td>传真</td>
+                <td>
+                    <input id="txtFax" name="txtFax" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.Fax"></td>
+                <td>Email</td>
+                <td>
+                    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.Email"></td>
+            </tr>
+            <tr>
+                <td>电话</td>
+                <td>
+                    <input id="txtPhone" name="txtPhone" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.Phone"></td>
+                <td>联系人</td>
+                <td>
+                    <input id="txtContactName" name="txtContactName" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.ContactName"></td>
+            </tr>
+            <tr>
+                <td>地址</td>
+                <td>
+                    <input id="txtAddress" name="txtAddress" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.Address">
+                </td>
+                <td>描述</td>
+                <td>
+                   <input id="txtDescription" name="txtDescription" type="text" placeholder="" class="input-medium" value="@ViewBag.Supplier.Description">
+                </td>
+            </tr>
+            <tr>
+                <td>供应商类型</td>
+                <td>
+                    <select id="ddlSupType" name="ddlSupType" class="input-medium" style="width:165px;">
+                        @Html.Raw(ViewBag.SupType)
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                   
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

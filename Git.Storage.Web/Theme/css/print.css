@@ -1,0 +1,41 @@
+/***
+Import fonts
+***/
+body {
+	background-image: none !important;
+}
+
+#header {
+	display: none;
+}
+
+#sidebar {
+	display: none;
+}
+
+#styler {
+	display: none;
+}
+
+.hidden-print {
+	display: none;
+}
+
+#footer {
+	display: none;
+}
+
+.no-page-break {
+	page-break-after: avoid;
+}
+
+#container {
+	margin: 0px;
+	padding: 0px;
+}
+
+#body {
+	min-height: auto !important;
+	background-image: none !important;
+	border-bottom: 0 solid #ddd;
+}

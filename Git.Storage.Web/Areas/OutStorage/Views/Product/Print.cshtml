@@ -1,0 +1,161 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印送货单</title>
+    <script src="/Theme/plugins/jquery-1.8.3.min.js"></script>
+    <script src="/Theme/plugins/print/LodopFuncs.js"></script>
+    <object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width="0" height="0">
+        <embed id="LODOP_EM" type="application/x-print-lodop" width="0" height="0" pluginspage="install_lodop32.exe"></embed>
+    </object>
+    <style id="style1">
+        table { font-size: 9pt; font-weight: normal; color: #000000; text-decoration: none; }
+        td { font-size: 9pt; font-weight: normal; color: #000000; text-decoration: none; }
+        .printfont { font-size: 9pt; font-weight: normal; color: #000000; text-decoration: none; }
+        .content tr:last-of-type td { border-bottom:1px solid black; }
+    </style>
+</head>
+<body>
+    <div id="divPrint" align="center" style="padding-top: 40px;">
+        <table cellpadding="0" cellspacing="0" style="width: 70%; border-style: none;" border="0">
+            <tr style="height: 40px;">
+                <td colspan="4" style="border-style: none; text-align: center; font-size: 22px; font-weight: bold;">送&nbsp;&nbsp;货&nbsp;&nbsp;单</td>
+            </tr>
+            <tr style="height: 25px;">
+                <td style="width: 10%; text-align:right;">收货单位:&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 40%;text-align:left;"></td>
+                <td style="width: 10%;text-align:right;">送货单位:&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 40%;text-align:left;">上海精毅管件有限公司</td>
+            </tr>
+            <tr style="height: 25px;">
+                <td style="width: 10%;"></td>
+                <td style="width: 40%;"></td>
+                <td style="width: 10%;text-align:right;">地址:&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 40%;text-align:left;">上海市嘉定区黄渡镇工业园区淞阳路1207号</td>
+            </tr>
+            <tr style="height: 25px;">
+                <td style="width: 10%;text-align:right;">地址:&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 40%;"></td>
+                <td style="width: 15%;text-align:right;">电话:&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 40%;text-align:left;">021-69592288</td>
+            </tr>
+            <tr style="height: 25px;">
+                <td style="width: 10%;"></td>
+                <td style="width: 40%;"></td>
+                <td style="width: 10%;"></td>
+                <td style="width: 40%; text-align: right; padding-right:40px;">2014年9月25日</td>
+            </tr>
+        </table>
+
+        <table cellpadding="0" cellspacing="0" style="width: 65%; border-style: solid;" border="0" class="content">
+            <tr style="height: 30px;">
+                <td style="width: 10%; text-align: center;border-left:1px solid black;border-top:1px solid black;">NO</td>
+                <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">图纸编号</td>
+                <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">订货编号</td>
+                <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">订货数量</td>
+                <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">交货数量</td>
+                <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;border-right:1px solid black;">备注</td>
+            </tr>
+            @{
+                int index = 1;
+                foreach (Git.Storage.Entity.OutStorage.OutStoDetailEntity item in ViewBag.Detail)
+                {
+                    if (index != (ViewBag.Detail as List<Git.Storage.Entity.OutStorage.OutStoDetailEntity>).Count())
+                    {
+                        <tr style="height: 30px;">
+                            <td style="width: 10%; text-align: center;border-left:1px solid black;border-top:1px solid black;">@index</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">@item.ProductName</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">@item.ContractOrder</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">@item.Qty</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;">@item.Num</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black;border-right:1px solid black;"></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr style="height: 30px;">
+                            <td style="width: 10%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;">@index</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;">@item.ProductName</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;">@item.ContractOrder</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;">@item.Qty</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;">@item.Num</td>
+                            <td style="width: 15%; text-align: center;border-left:1px solid black;border-top:1px solid black; border-bottom:1px solid black;border-right:1px solid black;"></td>
+                        </tr>
+                    }
+                    index++;
+                }
+            }
+        </table>
+
+        <br />
+        <table cellpadding="0" cellspacing="0" style="width: 70%; border-style: none;" border="0">
+            <tr style="height: 30px;">
+                <td style="width: 15%; text-align: center;">收货单位<br />
+                    及经手人</td>
+                <td style="width: 35%;"></td>
+                <td style="width: 15%; text-align: center;">送货单位<br />
+                    及经手人</td>
+                <td style="width: 35%;"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div align="center" style="margin-top: 20px;">
+        <p>
+            <input type="radio" id="Radio1" name="RadioS1" checked>默认打印机                         
+            <input type="radio" id="Radio2" name="RadioS1" onclick="CreatePrinterList()">指定打印机:            
+            <select id="PrinterList" size="1"></select><input type="button" id="Button2" value="设置默认" onclick="SetPrint7()" class="button" />
+        </p>
+        <p>
+            <span style="font-size: 14px; color: #006699; font-weight: bold;">份数</span>
+            <input type="text" name="txtCount0" id="txtCount0" value="1" style="text-align: center; width: 60px;" />
+            <input id="Button1" class="button" onclick="PrintSize()" type="button" value="打印" />
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        function CreatePrinterList() {
+            if (document.getElementById("PrinterList").innerHTML != "") return;
+            var LODOP = getLodop(document.getElementById("LODOP_OB"), document.getElementById("LODOP_EM"));
+            var iPrinterCount = LODOP.GET_PRINTER_COUNT();
+            for (var i = 0; i < iPrinterCount; i++) {
+                var option = document.createElement("option");
+                option.innerHTML = LODOP.GET_PRINTER_NAME(i);
+                option.value = i;
+                document.getElementById("PrinterList").appendChild(option);
+            };
+        };
+
+        function SetPrint7() {
+            LODOP = getLodop(document.getElementById("LODOP_OB"), document.getElementById("LODOP_EM"));
+            LODOP.PRINT_INIT("");
+            var strResult = LODOP.SET_PRINT_MODE("WINDOW_DEFPRINTER", getSelectedPrintIndex());
+            alert(strResult);
+        };
+
+        function getSelectedPrintIndex() {
+            if (document.getElementById("Radio2").checked)
+                return document.getElementById("PrinterList").value;
+            else return -1;
+        };
+
+        function winClose() {
+            window.close();
+        }
+
+        function PrintSize() {
+            var LODOP = getLodop(document.getElementById("LODOP_OB"), document.getElementById("LODOP_EM"));
+            var strBodyStyle = "<style>" + document.getElementById("style1").innerHTML + "</style>";
+            var strFormHtml = strBodyStyle + "<body>" + document.getElementById("divPrint").innerHTML + "</body>";
+
+            LODOP.ADD_PRINT_HTM(0, 10, 1100, 1754, strFormHtml);
+            LODOP.PRINT();
+        };
+    </script>
+</body>
+</html>

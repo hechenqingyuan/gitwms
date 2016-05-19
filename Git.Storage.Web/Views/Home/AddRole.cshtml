@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>角色编号</td>
+                <td>
+                    <input id="txtRoleNum" name="txtRoleNum" type="text" placeholder="自动生成,可不填" class="input-medium" disabled="disabled" value="@ViewBag.SysRole.RoleNum"></td>
+            </tr>
+            <tr>
+                <td>角色名称</td>
+                <td>
+                    <input id="txtRoleName" name="txtRoleName" type="text" placeholder="请输入角色名称" class="input-medium" value="@ViewBag.SysRole.RoleName"></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td>
+                    <input id="txtRemark" name="txtRemark" type="text"  class="input-medium" value="@ViewBag.SysRole.Remark"></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

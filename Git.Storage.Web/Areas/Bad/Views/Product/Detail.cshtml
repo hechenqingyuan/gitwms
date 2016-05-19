@@ -1,0 +1,81 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="dialogtab inorder_tab">
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle inorder_topline"><strong>报损单编号:</strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.BadReport.OrderNum</td>
+                <td class="inorder_tdTitle inorder_topline"><strong>报损人:</strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.BadReport.CreateUser</td>
+                <td class="inorder_tdTitle inorder_topline"><strong>创建时间: </strong></td>
+                <td class="inorder_tdContent inorder_topline">@ViewBag.BadReport.CreateTime</td>
+            </tr>
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>当前状态: </strong></td>
+                <td class="inorder_tdContent" colspan="5">@ViewBag.BadReport.StatusLable</td>
+            </tr>
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>报损描述: </strong></td>
+                <td class="inorder_tdContent" colspan="5">@ViewBag.BadReport.Remark</td>
+            </tr>
+            <tr class="inorder_tr">
+                <td class="inorder_tdTitle"><strong>审核备注: </strong></td>
+                <td class="inorder_tdContent" colspan="5">
+                    @if (ViewBag.Flag == "1")
+                    { 
+                        @ViewBag.BadReport.Reason
+                    }
+                    else
+                    {
+                        <textarea id="txtReason"></textarea>
+                    }
+                </td>
+            </tr>
+        </table>
+
+        <table class="table table-striped table-bordered table-hover inorder_detail" id="tabInfo">
+            <thead>
+                <tr class="widget-title">
+                    <th class="hidden-480">产品名称</th>
+                    <th class="hidden-480">产品条码</th>
+                    <th class="hidden-480">产品编号</th>
+                    <th class="hidden-480">批次</th>
+                    <th class="hidden-480">仓库库位(源)</th>
+                    <th class="hidden-480">报损库位</th>
+                    <th class="hidden-480">报损数量</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Git.Storage.Entity.Bad.BadReportDetailEntity entity in ViewBag.Detail)
+                { 
+                    <tr>
+                        <td>@entity.ProductName</td>
+                        <td>@entity.BarCode</td>
+                        <td>@entity.ProductNum</td>
+                        <td>@entity.BatchNum</td>
+                        <td>@entity.FromLocalName</td>
+                        <td>@entity.ToLocalName</td>
+                        <td>@entity.Num</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

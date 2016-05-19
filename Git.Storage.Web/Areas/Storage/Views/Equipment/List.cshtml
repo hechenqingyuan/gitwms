@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="fixed-top">
+    @Html.Partial("_Top")
+    <div id="container" class="row-fluid @ViewBag.MenuStatus">
+        @Html.Partial("_LeftMenu")
+        <div id="body">
+            <div id="widget-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button"></button>
+                    <h3>widget Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here will be a configuration form</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        @Html.Raw(ViewBag.NavMenu)
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="widget box light-grey">
+                            <div class="widget-title">
+                                <h4><i class="icon-globe"></i>设备管理</h4>
+                                <div class="actions">
+                                    <a class="btn btn-primary" href="javascript:void(0)" onclick="Equipment.Add()"><i class="icon-pencil"></i>&nbsp;新增</a>
+                                    <a class="btn btn-info" href="javascript:void(0)" onclick=""><i class="icon-download"></i>&nbsp;导出</a>
+                                </div>
+                            </div>
+                            <div class="widget-body">
+                                <div class="row-fluid">
+                                    <form class="form-horizontal" action="javascript:void(0)">
+                                        <div class="control-group">
+                                            <div class="controls controls-cus">
+                                                设备名/编号<input id="txtEquipmentName" name="txtEquipmentName" type="text" class="input-medium" />
+                                                状态<select id="ddlStatus" name="ddlStatus" class="input-medium">@Html.Raw(ViewBag.Status)</select>
+                                                <a id="gritter-remove-all" class="btn btn-info" href="javascript:void(0)" onclick="Equipment.PageClick(1,10)"><i class="icon-search"></i>&nbsp;搜索</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <table class="table table-striped table-bordered table-hover" id="tabInfo">
+                                    <thead>
+                                        <tr class="widget-title">
+                                            <th style="width: 8px;">
+                                                <input type="checkbox" class="group-checkable" onclick="Equipment.SelectAll(this)" /></th>
+                                            <th class="hidden-480">序号</th>
+                                            <th class="hidden-480">设备编号</th>
+                                            <th class="hidden-480">设备名</th>
+                                            <th class="hidden-480">是否授权</th>
+                                            <th class="hidden-480">授权标识符</th>
+                                            <th class="hidden-480">状态</th>
+                                            <th class="hidden-480">创建时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div class="row-fluid" id="mypager">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_Foot")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Equipment.PageClick(1, 10);
+        });
+    </script>
+</body>
+
+</html>

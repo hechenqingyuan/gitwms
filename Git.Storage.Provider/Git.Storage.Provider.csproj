@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B7C5DAD-F7CB-45AF-B97D-A5F05BBD235A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Git.Storage.Provider</RootNamespace>
+    <AssemblyName>Git.Storage.Provider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Git.Framework.Cache">
+      <HintPath>..\Lib\Git.Framework.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.DataTypes">
+      <HintPath>..\Lib\Git.Framework.DataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Email">
+      <HintPath>..\Lib\Git.Framework.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Encrypt">
+      <HintPath>..\Lib\Git.Framework.Encrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Events">
+      <HintPath>..\Lib\Git.Framework.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Io">
+      <HintPath>..\Lib\Git.Framework.Io.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Json">
+      <HintPath>..\Lib\Git.Framework.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Log">
+      <HintPath>..\Lib\Git.Framework.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.MsSql">
+      <HintPath>..\Lib\Git.Framework.MsSql.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.ORM">
+      <HintPath>..\Lib\Git.Framework.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Resource">
+      <HintPath>..\Lib\Git.Framework.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bad\BadOrder.cs" />
+    <Compile Include="Bad\BadProvider.cs" />
+    <Compile Include="Base\AdminProvider.cs" />
+    <Compile Include="Base\DepartProvider.cs" />
+    <Compile Include="Base\MeasureProvider.cs" />
+    <Compile Include="Base\PowerProvider.cs" />
+    <Compile Include="Base\SequenceProvider.cs" />
+    <Compile Include="Base\SysResourceProvider.cs" />
+    <Compile Include="Base\SysRoleProvider.cs" />
+    <Compile Include="Bill.cs" />
+    <Compile Include="CacheKey.cs" />
+    <Compile Include="Check\CheckDataProvider.cs" />
+    <Compile Include="Check\CheckOrder.cs" />
+    <Compile Include="Client\CustomerProvider.cs" />
+    <Compile Include="Client\SupplierProvider.cs" />
+    <Compile Include="DataFactory.cs" />
+    <Compile Include="InStorage\InStorageOrder.cs" />
+    <Compile Include="InStorage\InStorageProvider.cs" />
+    <Compile Include="Move\MoveOrder.cs" />
+    <Compile Include="Move\MoveProvider.cs" />
+    <Compile Include="Order\OrderBill.cs" />
+    <Compile Include="Order\OrderProvider.cs" />
+    <Compile Include="OutStorage\OutStorageOrder.cs" />
+    <Compile Include="OutStorage\OutStorageProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportProvider.cs" />
+    <Compile Include="Returns\ReturnOrder.cs" />
+    <Compile Include="Returns\ReturnProvider.cs" />
+    <Compile Include="Store\EquipmentProvider.cs" />
+    <Compile Include="Store\InventoryProvider.cs" />
+    <Compile Include="Store\LocalProductProvider.cs" />
+    <Compile Include="Store\LocationProvider.cs" />
+    <Compile Include="Store\ProductCategoryProvider.cs" />
+    <Compile Include="Store\ProductProvider.cs" />
+    <Compile Include="Store\StorageProvider.cs" />
+    <Compile Include="TNumProivder.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Storage.Common\Git.Storage.Common.csproj">
+      <Project>{7061be81-6a7b-4773-8bef-fad51a88d522}</Project>
+      <Name>Git.Storage.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.DataAccess\Git.Storage.DataAccess.csproj">
+      <Project>{3a7282e9-8371-4255-a7e6-600a111f03d1}</Project>
+      <Name>Git.Storage.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.Entity\Git.Storage.Entity.csproj">
+      <Project>{62f1847e-3906-43da-a80f-9977fb31f5ea}</Project>
+      <Name>Git.Storage.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.IDataAccess\Git.Storage.IDataAccess.csproj">
+      <Project>{a5e5d75f-7a39-4e34-a9aa-519901b89114}</Project>
+      <Name>Git.Storage.IDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

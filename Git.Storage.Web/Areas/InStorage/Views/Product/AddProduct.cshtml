@@ -1,0 +1,74 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="dialogtab">
+            <tr>
+                <td>产品编码</td>
+                <td>
+                    <input id="txtBarCode" name="txtBarCode" type="text" placeholder="输入关键字搜索或者双击选择" class="input-large" value="" style="width:210px;" />
+                    <input id="hdProductNum" name="hdProductNum" type="hidden" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>产品名称</td>
+                <td><input id="txtProductName" name="txtProductName" type="text" placeholder="" class="input-large" value="" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>产品规格</td>
+                <td><input id="txtSize" name="txtSize" type="text" placeholder="" class="input-large" value="" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>产品单价</td>
+                <td><input id="txtPrice" name="txtPrice" type="text" placeholder="" class="input-large" value="" />&nbsp;元</td>
+            </tr>
+            <tr>
+                <td>现有库存</td>
+                <td>
+                    <input id="txtLocalQty" name="txtLocalQty" type="text" placeholder="" class="input-medium" value="" disabled="disabled" />
+                    <span class="help-inline" id="spanUnitName1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>产品批次</td>
+                <td>
+                    <input id="txtProductBatch" name="txtProductBatch" type="text" placeholder="" class="input-large" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>入库库位</td>
+                <td>
+                    <input id="txtLocalName" name="txtLocalName" type="text" placeholder="请双击选择库位" class="input-large" value="" />
+                    <input id="txtLocalNum" name="txtLocalNum" type="hidden" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>入库数量</td>
+                <td>
+                    <input id="txtNum" name="txtNum" type="text" placeholder="" class="input-medium" value="" />
+                    <span class="help-inline" id="spanUnitName2"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+
+

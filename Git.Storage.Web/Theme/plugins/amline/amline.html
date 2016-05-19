@@ -1,0 +1,31 @@
+﻿<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Line & Area chart</title>
+    </head>
+    <body>
+        <!-- saved from url=(0013)about:internet --><!-- amline script-->
+        <script type="text/javascript" src="swfobject.js">
+        </script>
+        <div id="flashcontent">
+            <strong>You need to upgrade your Flash Player</strong>
+        </div>
+        <script type="text/javascript">
+            // <![CDATA[		
+            var so = new SWFObject("amline.swf", "amline", "520", "400", "8", "#FFFFFF");
+            so.addVariable("path", "");
+            so.addVariable("settings_file", encodeURIComponent("amline_settings.xml")); // you can set two or more different settings files here (separated by commas)
+            so.addVariable("data_file", encodeURIComponent("amline_data.xml"));
+           // so.addVariable("chart_data", encodeURIComponent("<chart><series><value xid='0'>2000</value><value xid='1'>2001</value><value xid='2'>2002</value><value xid='3'>2003</value><value xid='4'>2004</value><value xid='5'>2005</value><value xid='6'>2006</value><value xid='7'>2007</value></series><graphs><graph gid='0' title='First title'><value xid='0'>6</value><value xid='1'>36</value><value xid='2'>34</value><value xid='3'>37</value><value xid='4'>48</value><value xid='5'>42</value><value xid='6'>29</value><value xid='7'>43</value></graph><graph gid='1' title='Second title'><value xid='0'>19</value><value xid='1'>6</value><value xid='2'>39</value><value xid='3'>25</value><value xid='4'>8</value><value xid='5'>40</value><value xid='6'>50</value><value xid='7'>10</value></graph></graphs></chart>"));
+            //	so.addVariable("chart_data", encodeURIComponent("data in CSV or XML format"));                    // you can pass chart data as a string directly from this file
+            //	so.addVariable("chart_settings", encodeURIComponent("<settings>...</settings>"));                 // you can pass chart settings as a string directly from this file
+            //	so.addVariable("additional_chart_settings", encodeURIComponent("<settings>...</settings>"));      // you can append some chart settings to the loaded ones
+            //  so.addVariable("loading_settings", "LOADING SETTINGS");                                           // you can set custom "loading settings" text here
+            //  so.addVariable("loading_data", "LOADING DATA");                                                   // you can set custom "loading data" text here
+            //	so.addVariable("preloader_color", "#999999");
+            so.write("flashcontent");
+            // ]]>
+        </script>
+        <!-- end of amline script -->
+    </body>
+</html>

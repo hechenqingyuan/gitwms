@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAB2069E-C9EA-4439-B727-BA838A4A75AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Git.Storage.Conversion</RootNamespace>
+    <AssemblyName>Git.Storage.Conversion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Git.Framework.ORM">
+      <HintPath>..\Lib\Git.Framework.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_To.cs" />
+    <Compile Include="BadReportDetail_To.cs" />
+    <Compile Include="BadReport_To.cs" />
+    <Compile Include="CheckData_To.cs" />
+    <Compile Include="CheckStockInfo_To.cs" />
+    <Compile Include="CheckStock_To.cs" />
+    <Compile Include="CloneHistory_To.cs" />
+    <Compile Include="CloneTemp_To.cs" />
+    <Compile Include="CusAddress_To.cs" />
+    <Compile Include="Customer_To.cs" />
+    <Compile Include="Equipment_To.cs" />
+    <Compile Include="InStorage_To.cs" />
+    <Compile Include="InStorDetail_To.cs" />
+    <Compile Include="InStorSingle_To.cs" />
+    <Compile Include="InventoryBook_To.cs" />
+    <Compile Include="LocalProduct_To.cs" />
+    <Compile Include="Location_To.cs" />
+    <Compile Include="MeasureRel_To.cs" />
+    <Compile Include="Measure_To.cs" />
+    <Compile Include="MoveOrderDetail_To.cs" />
+    <Compile Include="MoveOrder_To.cs" />
+    <Compile Include="OutStoDetail_To.cs" />
+    <Compile Include="OutStorage_To.cs" />
+    <Compile Include="OutStorSingle_To.cs" />
+    <Compile Include="ProductCategory_To.cs" />
+    <Compile Include="Product_To.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnDetail_To.cs" />
+    <Compile Include="ReturnOrder_To.cs" />
+    <Compile Include="Storage_To.cs" />
+    <Compile Include="Supplier_To.cs" />
+    <Compile Include="SysDepart_To.cs" />
+    <Compile Include="SysRelation_To.cs" />
+    <Compile Include="SysResource_To.cs" />
+    <Compile Include="SysRole_To.cs" />
+    <Compile Include="TNum_To.cs" />
+    <Compile Include="VnArea_To.cs" />
+    <Compile Include="VnCity_To.cs" />
+    <Compile Include="VnProvince_To.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Storage.Entity\Git.Storage.Entity.csproj">
+      <Project>{62f1847e-3906-43da-a80f-9977fb31f5ea}</Project>
+      <Name>Git.Storage.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.RoseEntity\Git.Storage.RoseEntity.csproj">
+      <Project>{9ee98186-11fd-4501-be4b-98be0dcbae1e}</Project>
+      <Name>Git.Storage.RoseEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

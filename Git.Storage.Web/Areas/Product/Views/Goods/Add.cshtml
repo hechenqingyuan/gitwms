@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body class="dialog">
+    <div class="tab-pane active" id="widget_tab1">
+        <table class="formtab_user">
+            <tr>
+                <td>类别编号</td>
+                <td>
+                    <input id="txtCategoryCode" name="txtCategoryCode" type="text" placeholder="自动生成,可不填" class="input-medium" value="@ViewBag.Category.CateNum"></td>
+            </tr>
+            <tr>
+                <td>类别名称</td>
+                <td>
+                    <input id="txtCategoryName" name="txtCategoryName" type="text" placeholder="请输入类别名称" class="input-medium" value="@ViewBag.Category.CateName"></td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td>
+                    <input id="txtRemark" name="txtRemark" type="text" placeholder="" class="input-medium" value="@ViewBag.Category.Remark">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

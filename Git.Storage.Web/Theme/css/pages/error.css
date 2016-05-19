@@ -1,0 +1,27 @@
+/***
+Error Pages
+***/
+
+.page-404 .number {
+  letter-spacing: -10px;
+  margin-top: 0px;
+  line-height: 158px;
+  font-size: 158px;
+  font-weight: 300;
+  color: #7bbbd6;
+  text-align: right;
+}
+
+.page-500 .number {
+  letter-spacing: -10px;
+  margin-top: 0px;
+  line-height: 158px;
+  font-size: 158px;
+  font-weight: 300;
+  color: #ec8c8c;
+  text-align: right;
+}
+
+.page-500 .details {
+  padding-top: 20px;
+}

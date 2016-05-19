@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A7282E9-8371-4255-A7E6-600A111F03D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Git.Storage.DataAccess</RootNamespace>
+    <AssemblyName>Git.Storage.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Git.Framework.Io">
+      <HintPath>..\Lib\Git.Framework.Io.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.Log">
+      <HintPath>..\Lib\Git.Framework.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.MsSql">
+      <HintPath>..\Lib\Git.Framework.MsSql.dll</HintPath>
+    </Reference>
+    <Reference Include="Git.Framework.ORM">
+      <HintPath>..\Lib\Git.Framework.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bad\BadReportDataAccess.cs" />
+    <Compile Include="Bad\BadReportDetailDataAccess.cs" />
+    <Compile Include="Bad\Proc_AuditeBadReportDataAccess.cs" />
+    <Compile Include="Bad\Proc_BadTOP10NumDataAccess.cs" />
+    <Compile Include="Base\AdminDataAccess.cs" />
+    <Compile Include="Base\MeasureDataAccess.cs" />
+    <Compile Include="Base\MeasureRelDataAccess.cs" />
+    <Compile Include="Base\SequenceDataAccess.cs" />
+    <Compile Include="Base\SysDepartDataAccess.cs" />
+    <Compile Include="Base\SysRelationDataAccess.cs" />
+    <Compile Include="Base\SysResourceDataAccess.cs" />
+    <Compile Include="Base\SysRoleDataAccess.cs" />
+    <Compile Include="Base\TNumDataAccess.cs" />
+    <Compile Include="Base\VnAreaDataAccess.cs" />
+    <Compile Include="Base\VnCityDataAccess.cs" />
+    <Compile Include="Base\VnProvinceDataAccess.cs" />
+    <Compile Include="Check\CheckDataDataAccess.cs" />
+    <Compile Include="Check\CheckStockDataAccess.cs" />
+    <Compile Include="Check\CheckStockInfoDataAccess.cs" />
+    <Compile Include="Check\CloneHistoryDataAccess.cs" />
+    <Compile Include="Check\CloneTempDataAccess.cs" />
+    <Compile Include="Check\Proc_AuditeCheckDataAccess.cs" />
+    <Compile Include="Check\Proc_CreateCheckDataAccess.cs" />
+    <Compile Include="InStorage\InStorageDataAccess.cs" />
+    <Compile Include="InStorage\InStorDetailDataAccess.cs" />
+    <Compile Include="InStorage\InStorSingleDataAccess.cs" />
+    <Compile Include="InStorage\Proc_AuditeInStorageDataAccess.cs" />
+    <Compile Include="InStorage\Proc_InStorageReportDataAccess.cs" />
+    <Compile Include="Move\MoveOrderDataAccess.cs" />
+    <Compile Include="Move\MoveOrderDetailDataAccess.cs" />
+    <Compile Include="Move\Proc_AuditeMove.cs" />
+    <Compile Include="Order\OrderDetailDataAccess.cs" />
+    <Compile Include="Order\OrdersDataAccess.cs" />
+    <Compile Include="OutStorage\OutStoDetailDataAccess.cs" />
+    <Compile Include="OutStorage\OutStorageDataAccess.cs" />
+    <Compile Include="OutStorage\OutStorSingleDataAccess.cs" />
+    <Compile Include="OutStorage\Proc_AuditeOutStorageDataAccess.cs" />
+    <Compile Include="OutStorage\Proc_OutStorageReportDataAccess.cs" />
+    <Compile Include="Procedure\Proc_SwiftNumDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportParamsDataAccess.cs" />
+    <Compile Include="Report\ReportsDataAccess.cs" />
+    <Compile Include="Return\Proc_AuditeReturnDataAccess.cs" />
+    <Compile Include="Return\Proc_ReturnTOP10NumDataAccess.cs" />
+    <Compile Include="Return\ReturnDetailDataAccess.cs" />
+    <Compile Include="Return\ReturnOrderDataAccess.cs" />
+    <Compile Include="Store\CusAddressDataAccess.cs" />
+    <Compile Include="Store\CustomerDataAccess.cs" />
+    <Compile Include="Store\EquipmentDataAccess.cs" />
+    <Compile Include="Store\InventoryBookDataAccess.cs" />
+    <Compile Include="Store\LocalProductDataAccess.cs" />
+    <Compile Include="Store\LocationDataAccess.cs" />
+    <Compile Include="Store\Proc_ProductReportDataAccess.cs" />
+    <Compile Include="Store\ProductCategoryDataAccess.cs" />
+    <Compile Include="Store\ProductDataAccess.cs" />
+    <Compile Include="Store\StorageDataAccess.cs" />
+    <Compile Include="Store\SupplierDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Storage.Common\Git.Storage.Common.csproj">
+      <Project>{7061be81-6a7b-4773-8bef-fad51a88d522}</Project>
+      <Name>Git.Storage.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.Entity\Git.Storage.Entity.csproj">
+      <Project>{62f1847e-3906-43da-a80f-9977fb31f5ea}</Project>
+      <Name>Git.Storage.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Storage.IDataAccess\Git.Storage.IDataAccess.csproj">
+      <Project>{a5e5d75f-7a39-4e34-a9aa-519901b89114}</Project>
+      <Name>Git.Storage.IDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

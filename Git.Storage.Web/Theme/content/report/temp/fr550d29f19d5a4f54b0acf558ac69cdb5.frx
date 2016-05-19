@@ -1,0 +1,41 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/09/2015 12:59:55" ReportInfo.Modified="09/09/2015 12:59:55" ReportInfo.CreatorVersion="2015.3.7.0">
+  <Dictionary>
+    <TableDataSource Name="Table" ReferenceName="Data.Table" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="SnNum" DataType="System.String"/>
+      <Column Name="BarCode" DataType="System.String"/>
+      <Column Name="ProductName" DataType="System.String"/>
+      <Column Name="Num" DataType="System.Double"/>
+      <Column Name="MinNum" DataType="System.Double"/>
+      <Column Name="MaxNum" DataType="System.Double"/>
+      <Column Name="UnitNum" DataType="System.String"/>
+      <Column Name="UnitName" DataType="System.String"/>
+      <Column Name="CateNum" DataType="System.String"/>
+      <Column Name="CateName" DataType="System.String"/>
+      <Column Name="Size" DataType="System.String"/>
+      <Column Name="Color" DataType="System.String"/>
+      <Column Name="InPrice" DataType="System.Double"/>
+      <Column Name="OutPrice" DataType="System.Double"/>
+      <Column Name="AvgPrice" DataType="System.Double"/>
+      <Column Name="NetWeight" DataType="System.Double"/>
+      <Column Name="GrossWeight" DataType="System.Double"/>
+      <Column Name="Description" DataType="System.String"/>
+      <Column Name="PicUrl" DataType="System.String"/>
+      <Column Name="IsDelete" DataType="System.Int32"/>
+      <Column Name="CreateTime" DataType="System.DateTime"/>
+      <Column Name="CreateUser" DataType="System.String"/>
+      <Column Name="StorageNum" DataType="System.String"/>
+      <Column Name="DefaultLocal" DataType="System.String"/>
+      <Column Name="CusNum" DataType="System.String"/>
+      <Column Name="CusName" DataType="System.String"/>
+      <Column Name="Display" DataType="System.String"/>
+      <Column Name="Remark" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <DataBand Name="Data1" Width="718.2" Height="217.32" DataSource="Table">
+      <TextObject Name="Text1" Left="103.95" Top="28.35" Width="94.5" Height="18.9" Text="[Table.ProductName]"/>
+    </DataBand>
+  </ReportPage>
+</Report>

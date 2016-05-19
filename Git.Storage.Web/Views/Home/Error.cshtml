@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+</head>
+<body>
+    
+    <div id="body" style="margin-left:0px;">
+        <div class="container-fluid">
+
+            <div class="row-fluid">
+                <div class="span12">
+                    
+                    <div class="row-fluid page-404">
+                        <div class="span5 number">
+                            Warn
+                        </div>
+                        <div class="span7 details">
+                            <h3>对不起,您没有权限操该项</h3>
+                            <p>
+                                当前登录账号无法操作该项,<br>
+                                您可以使用其他更高级别账号登录,<br />
+                                或者联系管理员分配更高权限<br />
+
+                                <h4><a href="/Home/Index">点击跳转登录页面</a></h4>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

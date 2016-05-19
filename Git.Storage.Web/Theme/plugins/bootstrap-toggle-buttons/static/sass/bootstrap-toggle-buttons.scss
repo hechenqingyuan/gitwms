@@ -1,0 +1,121 @@
+@import "compass/css3";
+
+// version: 2.8
+// by Mattia Larentis - follow me on twitter! @SpiritualGuru
+
+$border: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+$white: #FEFEFE;
+$blue: #0088CC;
+$border-radius: 4px;
+
+.toggle-button {
+  display: inline-block;
+  cursor: pointer;
+  @include border-radius(5px);
+  border: 1px solid;
+  border-color: $border;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+
+  // disable text selection highlighting
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &.deactivate {
+    @include opacity(0.5);
+    cursor: default !important;
+    label, span {
+      cursor: default !important;
+    }
+  }
+  > div {
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    &.disabled {
+      left: -50%;
+    }
+  }
+  input[type=checkbox] {
+    //debug
+    display: none;
+    //position: absolute;
+    //margin-left: 60%;
+    //z-index: 123;
+  }
+
+  span, label {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    display: inline-block;
+  }
+
+  label {
+    background: $white;
+    margin-left: -$border-radius;
+    margin-right: -$border-radius;
+    border: 1px solid #E6E6E6;
+    margin-top: -1px;
+    z-index: 100;
+
+    @include background-image(linear-gradient(top, $white, #E6E6E6));
+    @include border-radius($border-radius);
+  }
+
+  span {
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+
+    &.labelLeft {
+      @include border-top-left-radius($border-radius);
+      @include border-bottom-left-radius($border-radius);
+      padding-left: 3px;
+    }
+    &.labelRight {
+      @include border-top-right-radius($border-radius);
+      @include border-bottom-right-radius($border-radius);
+      color: black;
+      @include background-image(linear-gradient(bottom, $white, #E6E6E6));
+      padding-right: 3px;
+    }
+
+    &.primary, &.labelLeft {
+      color: $white;
+      background: $blue;
+      @include background-image(linear-gradient(bottom, $blue, #0055CC));
+    }
+    &.info {
+      $startColor: #5BC0DE;
+      color: $white;
+      background: $startColor;
+      @include background-image(linear-gradient(bottom, $startColor, #2F96B4));
+    }
+    &.success {
+      $startColor: #62C462;
+      color: $white;
+      background: $startColor;
+      @include background-image(linear-gradient(bottom, $startColor, #51A351));
+    }
+    &.warning {
+      $startColor: #DBB450;
+      color: $white;
+      background: $startColor;
+      @include background-image(linear-gradient(bottom, $startColor, #F89406));
+    }
+    &.danger {
+      $startColor: #EE5f5B;
+      color: $white;
+      background: $startColor;
+      @include background-image(linear-gradient(bottom, $startColor, #BD362F));
+    }
+  }
+}

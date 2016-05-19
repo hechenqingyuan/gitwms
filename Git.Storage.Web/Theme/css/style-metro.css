@@ -1,0 +1,6 @@
+/* remove rounds from all elements*/
+ div, input, span, img, table, td, th, p, a, button, ul, li {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+} 

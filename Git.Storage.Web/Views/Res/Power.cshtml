@@ -1,0 +1,158 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    @Html.Partial("_Title")
+    @Html.Raw(ViewBag.CssFile)
+    <link href="/Theme/plugins/bootstrap-tree/bootstrap-tree/css/bootstrap-tree.css" rel="stylesheet" />
+</head>
+<body class="fixed-top">
+    @Html.Partial("_Top")
+    <div id="container" class="row-fluid @ViewBag.MenuStatus">
+        @Html.Partial("_LeftMenu")
+        <div id="body">
+            <div id="widget-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button"></button>
+                    <h3>widget Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here will be a configuration form</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        @Html.Raw(ViewBag.NavMenu)
+                    </div>
+                </div>
+
+                <div id="page">
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4><i class="icon-sitemap"></i>未分配的权限</h4>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="tree">
+                                        <li>
+                                            <a id="linkLeft" data-value="Bootstrap_Tree" data-toggle="branch" class="tree-toggle" data-role="branch" href="javascript:void(0);">系统模块</a>
+                                            <ul id="tree_1" class="branch in">
+                                                @*@{
+                                                    List<Git.Storage.Entity.Base.SysResourceEntity> ListNotAlloted = ViewBag.ListNotAlloted;
+                                                    foreach (Git.Storage.Entity.Base.SysResourceEntity item in ListNotAlloted.Where(a => a.ParentNum.IsEmpty()))
+                                                    { 
+                                                        <li>
+                                                            <a class="tree-toggle" href="javascript:void(0);" data-ResNum="@item.ResNum" data-ParentNum="@item.ParentNum">@item.ResName</a>
+                                                            <ul class="branch in">
+                                                                @foreach (Git.Storage.Entity.Base.SysResourceEntity child in ListNotAlloted.Where(a => a.ParentNum == item.ResNum))
+                                                                { 
+                                                                    <li>
+                                                                        @if (ListNotAlloted.Exists(a=>a.ParentNum==child.ResNum))
+                                                                        {
+                                                                            <a class="tree-toggle" href="javascript:void(0);" data-ResNum="@child.ResNum" data-ParentNum="@child.ParentNum">@child.ResName</a>
+                                                                            <ul class="branch in">
+                                                                                @foreach (Git.Storage.Entity.Base.SysResourceEntity grandson in ListNotAlloted.Where(a => a.ParentNum == child.ResNum))
+                                                                                { 
+                                                                                    <li><a href="javascript:void(0);" data-ResNum="@grandson.ResNum" data-ParentNum="@grandson.ParentNum"><i class="icon-arrow-right"></i>@grandson.ResName</a></li>
+                                                                                }
+                                                                            </ul>
+                                                                        }
+                                                                        else
+                                                                        { 
+                                                                            <a href="javascript:void(0);" data-ResNum="@child.ResNum" data-ParentNum="@child.ParentNum"><i class="icon-arrow-right"></i>@child.ResName</a>
+                                                                        }
+                                                                    </li>
+                                                                }
+                                                            </ul>
+                                                        </li>
+                                                    }
+                                                }*@
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4><i class="icon-cloud-download"></i>已分配的权限</h4>
+                                    <div class="actions">
+                                        @if (!(ViewBag.RoleName as string).IsEmpty())
+                                        {
+                                            <a class="btn btn-small" id="tree_2_collapse" href="javascript:void(0);">@ViewBag.RoleName</a>
+                                        }
+                                        <a class="btn btn-small" id="tree_2_expand" href="javascript:void(0);" onclick="UITree.Save()">保存</a>
+                                        <input type="hidden" id="hdRoleNum" name="hdRoleNum" value="@ViewBag.RoleNum" />
+                                    </div>
+                                </div>
+                                <div class="widget-body">
+                                    <ul class="tree">
+                                        <li>
+                                            <a id="linkRight" data-value="Bootstrap_Tree" data-toggle="branch" class="tree-toggle" data-role="branch" href="javascript:void(0)">系统模块</a>
+                                            <ul id="tree_2" class="branch in" >
+                                                @*@{
+                                                    List<Git.Storage.Entity.Base.SysResourceEntity> ListAlloted= ViewBag.ListAlloted as List<Git.Storage.Entity.Base.SysResourceEntity>;
+                                                    foreach (Git.Storage.Entity.Base.SysResourceEntity item in ListAlloted.Where(a=>a.ParentNum.IsEmpty()))
+                                                    { 
+                                                        <li>
+                                                            <a class="tree-toggle" href="javascript:void(0);" data-ResNum="@item.ResNum" data-ParentNum="@item.ParentNum">@item.ResName</a>
+                                                            <ul class="branch in">
+                                                                @foreach (Git.Storage.Entity.Base.SysResourceEntity child in ListAlloted.Where(a => a.ParentNum == item.ResNum))
+                                                                { 
+                                                                    <li>
+                                                                        @if (ListAlloted.Exists(a => a.ParentNum == child.ResNum))
+                                                                        {
+                                                                            <a class="tree-toggle" href="javascript:void(0);" data-ResNum="@child.ResNum" data-ParentNum="@child.ParentNum">@child.ResName</a>
+                                                                            <ul class="branch in">
+                                                                                @foreach (Git.Storage.Entity.Base.SysResourceEntity grandson in ListAlloted.Where(a => a.ParentNum == child.ResNum))
+                                                                                { 
+                                                                                    <li><a href="javascript:void(0);" data-ResNum="@grandson.ResNum" data-ParentNum="@grandson.ParentNum"><i class="icon-arrow-left"></i>@grandson.ResName</a></li>
+                                                                                }
+                                                                            </ul>
+                                                                        }
+                                                                        else
+                                                                        { 
+                                                                            <a href="javascript:void(0);" data-ResNum="@child.ResNum" data-ParentNum="@child.ParentNum"><i class="icon-arrow-left"></i>@child.ResName</a>
+                                                                        }
+                                                                    </li>
+                                                                }
+                                                            </ul>
+                                                        </li>
+                                                    }
+                                                }*@
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_Foot")
+    @*<script src="/Theme/plugins/bootstrap-tree/bootstrap-tree/js/bootstrap-tree.js" type="text/javascript"></script>*@
+    <script src="/Theme/scripts/ui-tree.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            UITree.init();
+        });
+    </script>
+</body>
+
+</html>
