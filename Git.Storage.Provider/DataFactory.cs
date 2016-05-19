@@ -11,6 +11,9 @@
  * 2013-08-19 10:22:44       情缘
 *********************************************************************************/
 
+using Git.Framework.Resource;
+using Git.Framework.DataTypes;
+using Git.Framework.DataTypes.ExtensionMethods;
 using Git.Storage.DataAccess.Bad;
 using Git.Storage.DataAccess.Base;
 using Git.Storage.DataAccess.Check;
@@ -42,6 +45,16 @@ namespace Git.Storage.Provider
 {
     public partial class DataFactory
     {
+
+        public DataFactory()
+        {
+            string v1 = ResourceManager.GetSettingEntity("Sign").Value;
+            int index=v1.LastIndex("TaSJ6cBqg");
+            if (index != 65)
+            {
+                throw new Exception("");
+            }
+        }
 
         /************************************ Procedure 命名空间 *************************************/
 

@@ -12,6 +12,7 @@ using Git.Framework.ORM;
 using Git.Storage.Provider.Base;
 using Git.Storage.Web.Lib.Filter;
 using System.Net.Http;
+using Git.Framework.Resource;
 
 namespace Git.Storage.Web.Controllers
 {
@@ -21,6 +22,10 @@ namespace Git.Storage.Web.Controllers
         {
             string url = WebUtil.GetQueryStringValue<string>("returnurl", string.Empty);
             ViewBag.ReferrerUrl = url;
+
+            string sign = Git.Framework.Encrypt.Encrypt.TripleDESDecrypting(ResourceManager.GetSettingEntity("loginsign").Value);
+            ViewBag.LoginSign = sign;
+
             return View();
         }
 

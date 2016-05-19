@@ -220,10 +220,6 @@
     <Compile Include="Areas\Move\Controllers\ProductController.cs" />
     <Compile Include="Areas\Move\Controllers\ProductManagerAjaxController.cs" />
     <Compile Include="Areas\Move\MoveAreaRegistration.cs" />
-    <Compile Include="Areas\Order\Controllers\OrderAjaxController.cs" />
-    <Compile Include="Areas\Order\Controllers\OrderManageAjaxController.cs" />
-    <Compile Include="Areas\Order\Controllers\OrderManageController.cs" />
-    <Compile Include="Areas\Order\OrderAreaRegistration.cs" />
     <Compile Include="Areas\OutStorage\Controllers\ProductAjaxController.cs" />
     <Compile Include="Areas\OutStorage\Controllers\ProductController.cs" />
     <Compile Include="Areas\OutStorage\Controllers\ProductManagerAjaxController.cs" />
@@ -300,7 +296,6 @@
     <Content Include="Theme\customer\InStorage\Git.Storage.ProductInOrder.js" />
     <Content Include="Theme\customer\jquery.jUploader-1.01.min.js" />
     <Content Include="Theme\customer\Move\Git.Storage.MoveOrder.js" />
-    <Content Include="Theme\customer\OrderManage\Git.Storage.OrderManage.js" />
     <Content Include="Theme\customer\OutStorage\Git.Storage.ProductOutOrder.js" />
     <Content Include="Theme\customer\Product\Git.Storage.Goods.js" />
     <Content Include="Theme\customer\Report\Git.Storage.BadReport.js" />
@@ -2000,14 +1995,6 @@
     <Content Include="Areas\Storage\Views\Measure\AddMeasure.cshtml" />
     <Content Include="Areas\Storage\Views\Measure\Rel.cshtml" />
     <Content Include="Areas\Report\Views\Report\InventoryReport.cshtml" />
-    <Content Include="Areas\Order\Views\Web.config" />
-    <Content Include="Areas\Order\Views\OrderManage\Index.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\Add.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\AddProduct.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\Detail.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\Edit.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\ImportFileList.cshtml" />
-    <Content Include="Areas\Order\Views\OrderManage\EditImportFile.cshtml" />
     <Content Include="Areas\OutStorage\Views\Product\OrderDetail.cshtml" />
     <Content Include="Areas\OutStorage\Views\Product\Print.cshtml" />
     <Content Include="Areas\Product\Views\Goods\Dialog.cshtml" />

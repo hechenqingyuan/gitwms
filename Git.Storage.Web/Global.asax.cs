@@ -57,6 +57,9 @@ namespace Git.Storage.Web
             //初始化规则
             SequenceProvider sequenceProvider = new SequenceProvider();
             sequenceProvider.Init();
+
+            string vlaue = Git.Framework.Encrypt.Encrypt.TripleDESEncrypting("技术支持QQ群:142050808&nbsp;&nbsp;88718955 版权声明: 不得用于任何商业用途,违法必究");
+
         }
 
 
