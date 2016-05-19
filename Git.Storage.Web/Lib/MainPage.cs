@@ -112,6 +112,14 @@ namespace Git.Storage.Web.Lib
                 ViewBag.LoginUserName = this.LoginUserName;
                 ViewBag.LoginUserCode = this.LoginUserCode;
             }
+
+            string login = "login";
+            string v2 = ResourceManager.GetSettingEntity(login + "sign").Value;
+            int index = v2.LastIndex("TwbAIII0zXk9");
+            if (index != 90)
+            {
+                throw new Exception("");
+            }
         }
 
         /// <summary>
