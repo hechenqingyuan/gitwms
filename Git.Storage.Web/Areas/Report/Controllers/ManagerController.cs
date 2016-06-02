@@ -96,7 +96,7 @@ namespace Git.Storage.Web.Areas.Report.Controllers
         [LoginFilter]
         public ActionResult Designer()
         {
-            string ReportNum = WebUtil.GetQueryStringValue<string>("SnNum", string.Empty);
+            string ReportNum = WebUtil.GetQueryStringValue<string>("ReportNum", string.Empty);
             ReportProvider provider = new ReportProvider();
             if (ReportNum.IsEmpty())
             {
