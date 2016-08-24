@@ -198,7 +198,7 @@
       <publishTime>09/08/2015 20:43:30</publishTime>
     </File>
     <File Include="Areas/Report/Views/Manager/AddParam.cshtml">
-      <publishTime>09/08/2015 20:29:41</publishTime>
+      <publishTime>04/26/2016 11:15:25</publishTime>
     </File>
     <File Include="Areas/Report/Views/Manager/Designer.cshtml">
       <publishTime>09/07/2015 13:12:35</publishTime>
@@ -210,7 +210,7 @@
       <publishTime>09/07/2015 09:00:35</publishTime>
     </File>
     <File Include="Areas/Report/Views/Manager/Show.cshtml">
-      <publishTime>09/09/2015 22:33:31</publishTime>
+      <publishTime>05/03/2016 09:01:42</publishTime>
     </File>
     <File Include="Areas/Report/Views/Product/StockBill.cshtml">
       <publishTime>01/27/2015 20:07:38</publishTime>
@@ -309,10 +309,10 @@
       <publishTime>12/22/2012 11:47:39</publishTime>
     </File>
     <File Include="bin/FastReport.dll">
-      <publishTime>09/07/2015 14:11:18</publishTime>
+      <publishTime>09/07/2015 13:51:18</publishTime>
     </File>
     <File Include="bin/FastReport.Web.dll">
-      <publishTime>09/07/2015 14:11:14</publishTime>
+      <publishTime>09/07/2015 13:51:14</publishTime>
     </File>
     <File Include="bin/Git.Framework.Cache.dll">
       <publishTime>09/19/2012 16:49:45</publishTime>
@@ -351,22 +351,22 @@
       <publishTime>05/03/2013 17:07:03</publishTime>
     </File>
     <File Include="bin/Git.Storage.Common.dll">
-      <publishTime>02/12/2016 15:42:28</publishTime>
+      <publishTime>07/31/2016 13:47:20</publishTime>
     </File>
     <File Include="bin/Git.Storage.DataAccess.dll">
-      <publishTime>02/22/2016 20:15:33</publishTime>
+      <publishTime>07/31/2016 13:47:21</publishTime>
     </File>
     <File Include="bin/Git.Storage.Entity.dll">
-      <publishTime>02/22/2016 20:15:32</publishTime>
+      <publishTime>07/31/2016 13:47:20</publishTime>
     </File>
     <File Include="bin/Git.Storage.IDataAccess.dll">
-      <publishTime>02/22/2016 20:15:33</publishTime>
+      <publishTime>07/31/2016 13:47:20</publishTime>
     </File>
     <File Include="bin/Git.Storage.Provider.dll">
-      <publishTime>02/22/2016 20:15:34</publishTime>
+      <publishTime>07/31/2016 13:47:22</publishTime>
     </File>
     <File Include="bin/Git.Storage.Web.dll">
-      <publishTime>03/03/2016 21:15:19</publishTime>
+      <publishTime>07/31/2016 13:47:23</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>04/28/2012 11:15:49</publishTime>
@@ -489,10 +489,10 @@
       <publishTime>08/12/2013 18:39:59</publishTime>
     </File>
     <File Include="Configs/Cookie/cookie.config">
-      <publishTime>08/12/2013 18:39:59</publishTime>
+      <publishTime>05/19/2016 08:59:26</publishTime>
     </File>
     <File Include="Configs/Data/Database.config">
-      <publishTime>02/12/2016 15:52:35</publishTime>
+      <publishTime>05/19/2016 09:47:31</publishTime>
     </File>
     <File Include="Configs/Data/Database.xsx">
       <publishTime>08/12/2013 18:39:59</publishTime>
@@ -564,7 +564,7 @@
       <publishTime>05/05/2015 12:02:09</publishTime>
     </File>
     <File Include="Configs/Setting/setting.config">
-      <publishTime>10/09/2015 19:22:41</publishTime>
+      <publishTime>05/19/2016 09:42:43</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>08/07/2014 14:13:07</publishTime>
@@ -5511,7 +5511,7 @@
       <publishTime>12/04/2014 12:49:34</publishTime>
     </File>
     <File Include="Views/Home/AddRole.cshtml">
-      <publishTime>08/07/2014 14:13:07</publishTime>
+      <publishTime>03/10/2016 20:13:50</publishTime>
     </File>
     <File Include="Views/Home/AddUser.cshtml">
       <publishTime>08/07/2014 14:13:07</publishTime>
@@ -5529,7 +5529,7 @@
       <publishTime>10/09/2015 19:10:43</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/17/2016 16:51:34</publishTime>
+      <publishTime>05/19/2016 09:28:35</publishTime>
     </File>
     <File Include="Views/Home/RoleList.cshtml">
       <publishTime>01/01/2015 21:18:10</publishTime>
@@ -5559,7 +5559,7 @@
       <publishTime>12/20/2014 22:38:49</publishTime>
     </File>
     <File Include="Views/Shared/_Foot.cshtml">
-      <publishTime>05/05/2015 12:01:13</publishTime>
+      <publishTime>05/19/2016 09:22:56</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>08/07/2014 14:13:07</publishTime>
@@ -5580,7 +5580,7 @@
       <publishTime>08/07/2014 14:13:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/12/2016 15:42:33</publishTime>
+      <publishTime>07/31/2016 13:47:25</publishTime>
     </File>
     <File Include="WebReportDesigner/images/barcode-sprite.png">
       <publishTime>09/07/2015 14:16:53</publishTime>
