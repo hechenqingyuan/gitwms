@@ -6,6 +6,7 @@
  *
  * Description: Git.Framework
  * http://www.cnblogs.com/qingyuan/
+ * 
  * Revision History:
  * Date         Author               Description
  * 2013-08-19 10:22:44       情缘
