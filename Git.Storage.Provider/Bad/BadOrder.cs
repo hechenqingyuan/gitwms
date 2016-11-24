@@ -11,6 +11,7 @@
  * 2013-11-30 12:42:01       情缘
 *********************************************************************************/
 
+
 using Git.Storage.Entity.Bad;
 using Git.Framework.DataTypes;
 using Git.Framework.DataTypes.ExtensionMethods;
