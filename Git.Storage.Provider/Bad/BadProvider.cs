@@ -11,6 +11,7 @@
  * 2013-11-30 12:45:13       情缘
 *********************************************************************************/
 
+
 using Git.Framework.Log;
 using Git.Framework.ORM;
 using Git.Storage.Entity.Bad;
