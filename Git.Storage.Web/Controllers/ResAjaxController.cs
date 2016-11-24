@@ -25,6 +25,7 @@ namespace Git.Storage.Web.Controllers
     {
         /// <summary>
         /// 获得菜单列表
+        /// 
         /// </summary>
         /// <returns></returns>
         [LoginAjaxFilter]

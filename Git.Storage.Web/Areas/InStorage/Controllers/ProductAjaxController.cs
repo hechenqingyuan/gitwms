@@ -27,6 +27,7 @@ namespace Git.Storage.Web.Areas.InStorage.Controllers
         /// 新建入库单
         /// 返回值说明:
         /// 1001 : 请选择要入库的产品以及数量
+        /// 
         /// </summary>
         /// <returns></returns>
         [LoginAjaxFilter]

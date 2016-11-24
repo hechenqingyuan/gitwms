@@ -13,10 +13,9 @@ namespace Git.Storage.Web.Controllers
 {
     public class CommonController : Controller
     {
-
-
         /// <summary>
         /// 输出枚举转化JS
+        /// 
         /// </summary>
         /// <returns></returns>
         [OutputCache(Duration = 30 * 1000)]

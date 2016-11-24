@@ -24,6 +24,7 @@ namespace Git.Storage.Web.Areas.InStorage.Controllers
     {
         /// <summary>
         /// 分页查询入库单列表
+        /// 
         /// </summary>
         /// <returns></returns>
         [LoginAjaxFilter]
