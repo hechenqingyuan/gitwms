@@ -51,8 +51,6 @@ namespace Git.Storage.Web
                 typeof(EElementType),
                 typeof(ESequence),
                 typeof(EUnit),
-                typeof(ESequence),
-                typeof(ESequence),
                 typeof(EBool));
 
             SetVersion();
