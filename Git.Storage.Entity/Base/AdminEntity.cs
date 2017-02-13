@@ -1,14 +1,17 @@
 /*******************************************************************************
  * Copyright (C) Git Corporation. All rights reserved.
  *
- * Author: 代码工具自动生成
- * Create Date: 2013-08-19 11:54:40
- * Blog: http://www.cnblogs.com/qingyuan/ 
+ * Author: 情缘
+ * Create Date: 2017-01-01 14:38:43
+ *
  * Description: Git.Framework
+ * http://www.cnblogs.com/qingyuan/
+ * 吉特云仓储：http://yun.gitwms.com/
+ * 吉特仓储系统:http://www.gitwms.com/
  * 
  * Revision History:
  * Date         Author               Description
- * 2013-08-19 11:54:40
+ * 2013-09-01 15:10:06       情缘
 *********************************************************************************/
 
 using System;
