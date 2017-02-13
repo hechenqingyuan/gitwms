@@ -1,4 +1,17 @@
-﻿using Git.Framework.Controller;
+﻿/*******************************************************************************
+ * Copyright (C) Git Corporation. All rights reserved.
+ *
+ * Author: 情缘
+ * Create Date: 2014-01-01 14:38:43
+ *
+ * Description: Git.Framework
+ * http://www.cnblogs.com/qingyuan/
+ * Revision History:
+ * Date         Author               Description
+ * 2014-01-01 14:38:43       情缘
+*********************************************************************************/
+
+using Git.Framework.Controller;
 using Git.Framework.DataTypes;
 using Git.Storage.Common;
 using Git.Storage.Entity.Bad;

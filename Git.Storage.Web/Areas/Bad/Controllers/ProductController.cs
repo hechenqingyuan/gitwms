@@ -1,4 +1,17 @@
-﻿using Git.Storage.Web.Lib;
+﻿/*******************************************************************************
+ * Copyright (C) Git Corporation. All rights reserved.
+ *
+ * Author: 情缘
+ * Create Date: 2014-01-01 14:38:43
+ *
+ * Description: Git.Framework
+ * http://www.cnblogs.com/qingyuan/
+ * Revision History:
+ * Date         Author               Description
+ * 2014-01-01 14:38:43       情缘
+*********************************************************************************/
+
+using Git.Storage.Web.Lib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
