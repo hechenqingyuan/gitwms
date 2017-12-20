@@ -20,6 +20,8 @@ QQ群: 142050808    88718955
 有偿技术支持,二次开发等业务承接
 
 
+![image](http://yun.gitwms.com/Weixin.jpg?raw=true)
+
 ### 项目演示地址
 
 
