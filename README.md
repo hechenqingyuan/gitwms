@@ -19,9 +19,7 @@ QQ群: 142050808    88718955
 
 有偿技术支持,二次开发等业务承接
 
-
-![image](http://yun.gitwms.com/Weixin.jpg =150x150)
-<img src="http://yun.gitwms.com/Weixin.jpg" width="150" height="200" alt="图片描述文字"/>
+<img src="http://yun.gitwms.com/Weixin.jpg" width="300" height="300" alt=""/>
 
 ### 项目演示地址
 
