@@ -21,6 +21,7 @@ QQ群: 142050808    88718955
 
 
 ![image](http://yun.gitwms.com/Weixin.jpg =150x150)
+<img src="http://yun.gitwms.com/Weixin.jpg" width="150" height="200" alt="图片描述文字"/>
 
 ### 项目演示地址
 
