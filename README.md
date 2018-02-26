@@ -16,14 +16,6 @@ QQ群: 142050808    88718955
 
 该项目未经本人允许不得修改软件版权信息,不得以任何商业途径兜售源码, 同时本人提供仓库系统         
 
-
-有偿技术支持,二次开发等业务承接
-
-<img src="http://yun.gitwms.com/Weixin.jpg" width="350" height="500" alt=""/>
-<img src="http://yun.gitwms.com/Alipay.jpg" width="350" height="500" alt=""/>
-### 项目演示地址
-
-
 基础版本
 
 http://www.gitwms.com/
@@ -33,7 +25,21 @@ http://www.gitwms.com/
 
 http://yun.gitwms.com/
 
+吉特三方仓储(租赁)管理系统演示地址
+
+http://v35.gitwms.com
+
 更多案例请联系我
+
+
+有偿技术支持,二次开发等业务承接
+
+<img src="http://yun.gitwms.com/Weixin.jpg" width="350" height="500" alt=""/>
+<img src="http://yun.gitwms.com/Alipay.jpg" width="350" height="500" alt=""/>
+### 项目演示地址
+
+
+
 
 
 ### 吉特仓储管理系统
