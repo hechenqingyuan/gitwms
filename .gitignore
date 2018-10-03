@@ -19,3 +19,5 @@
 /Git.Storage.Web/Log
 /Git.Storage.WebAPI/obj
 /Git.Storage.WebAPI/bin
+/.vs
+/Git.Storage.Web.v12.suo
